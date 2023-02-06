@@ -9,6 +9,23 @@ Purchase everything in a convenient and secure shopping cart.
 Requirements
 To use this website, you will need a modern web browser and an internet connection.
 
+# Minimum Viable Product 
+### MVP - User Stories
+#### GENERAL USER
+  - As a user I want to view whats available at Disney World Orlando
+  - As a user I want to see suggested hotels
+  - As a user I want to see suggested Things to Do
+  - As a user I want to see suggested places to eat
+  - As a user I want to see the weather for the Orlando area
+  
+  #### BASIC USER
+  - As a user I want to sign-up for and login/out of my account
+  - As a user I want to add tickets to my cart
+  - As a user I want to add hotels to my cart
+  - As a user I want to make sure the items in my cart are saved
+  
+    
+
 # Getting Started
 Open the website in your web browser.
 Choose your Disney World Park and purchase your tickets.
