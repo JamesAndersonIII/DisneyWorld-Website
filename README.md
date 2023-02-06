@@ -1,4 +1,4 @@
-# DisneyWorldPlanner
+# Disney World Planner
 Welcome to the Disney World Vacation Planner! This website is designed to help you plan your perfect Disney World vacation. You can choose from one of the four Disney World Parks (Magic Kingdom, Epcot, Hollywood Studios, or Animal Kingdom) and purchase your tickets. You can also select your accommodation from a range of Disney World resorts. You can plan your itinerary by exploring different things to do and restaurants. Finally, you can purchase everything in a convenient and secure shopping cart.
 
 # Features
