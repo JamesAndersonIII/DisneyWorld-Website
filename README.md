@@ -20,7 +20,7 @@ If you encounter any issues while using this website, please contact us at suppo
 # Team Git and GitHub Workflow
 On Local Machine
 
-git branch list all local branches
+`git branch` list all local branches
 
 git branch -r list all remote branches (if want to see what branches are on remote)
 
