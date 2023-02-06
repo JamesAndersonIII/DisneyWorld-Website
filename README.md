@@ -25,7 +25,7 @@ Welcome to the Disney World Vacation Planner! This website is designed to help y
   - As a user I want to add hotels to my cart
   - As a user I want to make sure the items in my cart are saved
   
-# Wireframs
+# Wireframes
 
    ### Landing Page
    <img width="758" alt="LandingPage" src="https://user-images.githubusercontent.com/66242273/217104994-61677ef3-f791-406f-a4a2-69bc011f18d3.png">
