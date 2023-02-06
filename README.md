@@ -22,22 +22,22 @@ On Local Machine
 
 `git branch` list all local branches
 
-git branch -r list all remote branches (if want to see what branches are on remote)
+`git branch -r` list all remote branches (if want to see what branches are on remote)
 
-git switch dev OR git checkout dev moves you to dev branch
+`git switch dev` OR `git checkout dev` moves you to dev branch
 
-git checkout -b <new branchName> OR git switch -c <new branchName>
+`git checkout -b <new branchName>` OR `git switch -c <new branchName>`
 
 create a new branch off of dev
 creates a local branch only (not tracking any remote branch named: <new branchName>)
 Implent a feature based on issue
 
 add new code
-git add . add all current changes and prepare for staging
+`git add .` add all current changes and prepare for staging
 
-git commit -m "message: what this commit does" commit
+`git commit -m "message: what this commit does"` commit
 
-git push origin <new branchName>
+`git push origin <new branchName>`
 
 On GH
 
