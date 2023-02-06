@@ -25,6 +25,42 @@ Welcome to the Disney World Vacation Planner! This website is designed to help y
   - As a user I want to add hotels to my cart
   - As a user I want to make sure the items in my cart are saved
   
+# Wireframs
+
+   ### Landing Page
+   <img width="758" alt="LandingPage" src="https://user-images.githubusercontent.com/66242273/217104994-61677ef3-f791-406f-a4a2-69bc011f18d3.png">
+   
+   ### Sign-up Page
+   <img width="764" alt="Sign-up Page" src="https://user-images.githubusercontent.com/66242273/217104993-4a320808-d771-4326-bd2c-455738e4368c.png">
+   
+   
+   ### Login Page
+   <img width="682" alt="Login Page" src="https://user-images.githubusercontent.com/66242273/217104990-3412275c-43bb-4038-a55a-c5f9bd61d3f5.png">
+   
+   
+   ### Parks & Tickets
+   <img width="764" alt="Parks   Tickets" src="https://user-images.githubusercontent.com/66242273/217104987-6e8d9dd6-5efa-44bf-96fb-20ca3e9d3d8b.png">
+
+   
+   ### Places To Stay
+   
+   
+   ### Things To Do
+   <img width="763" alt="Things To Do" src="https://user-images.githubusercontent.com/66242273/217104986-733a9b08-0eff-4122-bb86-5414d5e1ebfb.png">
+   
+   
+   ### Restaurants
+   <img width="764" alt="Restaurants" src="https://user-images.githubusercontent.com/66242273/217104985-7a47630c-689f-4e12-99db-11de72b9f225.png">
+   
+   
+   ### Cart (Populated)
+   <img width="650" alt="Cart (Populated)" src="https://user-images.githubusercontent.com/66242273/217104983-31a0e569-92ee-4fdb-96e2-717ea99e1e65.png">
+   
+   
+   ### Cart (Empty)
+   <img width="764" alt="Cart (Empty)" src="https://user-images.githubusercontent.com/66242273/217104980-f0fb78fe-6543-43cc-bc87-7590176ae3be.png">
+
+  
 # Getting Started
 - Open the website in your web browser.
 - Choose your Disney World Park and purchase your tickets.
