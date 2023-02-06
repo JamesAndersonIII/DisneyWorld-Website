@@ -43,7 +43,7 @@ Welcome to the Disney World Vacation Planner! This website is designed to help y
 
    
    ### Places To Stay
-   
+   ![Theme Park-Places To Stay](https://user-images.githubusercontent.com/66242273/217111270-d0378613-a4b6-4415-a3ee-de509af5d47f.jpg)
    
    ### Things To Do
    <img width="763" alt="Things To Do" src="https://user-images.githubusercontent.com/66242273/217104986-733a9b08-0eff-4122-bb86-5414d5e1ebfb.png">
