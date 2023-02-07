@@ -1,0 +1,59 @@
+#park_banner_image {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+}
+
+.middle-row {
+    margin: 50px;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#box5,
+#box6,
+#box7 {
+    width: 33%;
+    padding: 50px;
+    margin: 60px;
+}
+
+#title {
+    display: flex;
+    justify-content: center;
+}
+
+.add-to-cart-button {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.after-hours {
+    width: 33%;
+    padding: 50px;
+    margin: 60px;
+}
+
+.image-container {
+    border: 5px;
+}
+
+#special-events {
+    display: flex;
+    justify-content: center;
+}
+
+#theme-park-figures {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#theme-parks-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
