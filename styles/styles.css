@@ -1,0 +1,20 @@
+html{ 
+    box-sizing: border-box;
+}
+
+#header-container, #navbar-container{
+    font-family: "WaltographRegular";
+    background-color: rgb(248, 243, 243, .3);
+    padding-left: 2%;
+}
+
+
+body{
+    background-image: url("https://oceanschool.nfb.ca/_nuxt/img/heroCommunity.a21abf3.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+  
+    font-family: "Playfair Display";
+    font-weight: normal;
+    color: rgb(250, 245, 245);
+}
