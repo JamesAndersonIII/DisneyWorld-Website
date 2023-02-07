@@ -2,6 +2,39 @@ html{
     box-sizing: border-box;
 }
 
+body{
+    background-image: url("https://wallpapers.com/images/featured/has6vy47k75d0bzs.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "WaltographRegular";
+    font-weight: normal;
+    color: rgb(29, 14, 238);
+}
+
+#signupPage{
+    font-size: 25px;
+    margin-top: 5%;
+}
+
+
 .form-control, .dropdown{
     width: 300px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* signup box */
+.form-text{
+    font-family: "WaltographRegular";
+    font-weight: bold;
+    font-size: 15px;
+    word-wrap: normal;
+}
+
+
+
+/* security box */
+
+.rightArticle, #leftArticle{
+    background-color: rgba(239, 243, 242, 0.3);
+    
 }
