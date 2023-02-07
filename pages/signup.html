@@ -14,34 +14,38 @@
 
     <!-- fonts -->
     <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/waltograph-disney" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kavoon&family=Playfair+Display&family=Rancho&family=Roboto:wght@500&family=Shadows+Into+Light&display=swap" rel="stylesheet">
 
     <!-- my CSS -->
+    <link rel="stylesheet" href="../styles/styles.css">
     <link rel="stylesheet" href="../styles/signup.css">
 </head>
 <body>
 
-  <section id="header-container" class="container">
-    <section id="weather-data">Placeholder for Weather</section>
-    <button id="login-btn">Login</button>
-    <button id="signup-btn">Sign Up</button>
-</section>
-
-<section id="navbar-container" class="container">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<section id="navbar-container" >
+    <nav class=" navbar navbar-expand-lg navbar-light">
         <!-- update href to point to landing page when clicked -->
         <a class="navbar-brand" href="./landing_page.html">DisneyWorld</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <section class="collapse navbar-collapse" id="navbar-collapsable">
+        <section class=" collapse navbar-collapse" id="navbar-collapsable">
             <section class="navbar-nav">
                 <!-- Update hrefs to their respective pages -->
-                <a href="#" class="nav-item nav-link">Parks & Tickets</a>
+               <div class="navLinks"> <a href="#" class="nav-item nav-link">Parks & Tickets</a> </div>
                 <a href="#" class="nav-item nav-link">Places To Stay</a>
                 <a href="#" class="nav-item nav-link">Things To Do</a>
                 <a href="./restaurants.html" class="nav-item nav-link">Restaurants</a>
                 <a href="#" class="nav-item nav-link">Cart</a>
             </section>
+            
+            <!-- filler columns so buttons can be to right -->
+            <div class="col"></div>
+            
+            <button class="me-3 col btn btn-light" id="login-btn">Login</button>
+            <button class="me-2 col btn btn-light" id="signup-btn">Sign Up</button>
         </section>
     </nav>
 </section>
@@ -75,7 +79,7 @@
                     <div class="mb-3">
                     <label for="InputPassword" class="form-label">Password</label>
                     <input type="password" class="form-control" id="InputPassword" aria-describedby="passwordHelpBlock">
-                    <div class="form-text">Password must be 8-20 characters long, contain letters, special characters, and numbers.</div>
+                    <div class="form-text">Password must be 8-20 characters long, contain letters, <br> special characters, and numbers.</div>
                   </div>
                 </form>
           </article>
@@ -143,20 +147,12 @@
       <section class="row text-center">
         <div class="col"></div>
         <article class="mt-4 col" id="signUpSubmit">
-          <div id="submitForm">
-            <button type="submit" class="btn btn-primary mb-5 btn-lg">Sign Up</button>
+          <div>
+            <button type="submit" class="btn btn-dark mb-5 btn-lg" id="submitForm">Sign Up</button>
           </div>
         </article>
         <div class="col"></div>
     </section>
-
-    <section class="row text-center">
-     <div class="col"></div> 
-    <article class="col" id="loginLink">
-      <button type="button" class="btn btn-primary">Have an account? <br> Login Here</button>
-    </article>
-    <div class="col"></div>
-  </section>
 
     
     
