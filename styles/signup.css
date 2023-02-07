@@ -1,0 +1,7 @@
+html{ 
+    box-sizing: border-box;
+}
+
+.form-control, .dropdown{
+    width: 300px;
+}

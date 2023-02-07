@@ -1,0 +1,12 @@
+html{ 
+    box-sizing: border-box;
+}
+
+.fullCart{
+    border: 2px solid red;
+}
+
+#cartContainer{
+    display: flex;
+    
+}
