@@ -3,14 +3,17 @@ main{
 }
 
 #cart-text {
-    background-image: url("https://cdn1.parksmedia.wdprapps.disney.com/resize/mwImage/1/1440/540/75/dam/disney-world/admission/WDW_SWGE_1440x540.png?1675790173554");
-    height: 55vh;
+    background-image: url("https://cdn1.parksmedia.wdprapps.disney.com/resize/mwImage/1/1440/540/75/dam/disney-world/admission/WDW_SWGE_1440x540.png?1674502817666");
+    background-attachment: fixed;
+    background-size: contain;
+    height: 69vh;
+    
 }
 
 
 #fullCart{
     border: 2px solid coral;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 #cartPrice{
@@ -29,13 +32,7 @@ main{
     padding-right: 2%;
 }
 
-#quantity{
+#quantityTix, #quantityHotel{
     width: 40px;
     background-color: rgb(242, 247, 252,.2);
-}
-
-footer{
-    position:absolute;
-    bottom: 0;
-    left: 1%;
 }
