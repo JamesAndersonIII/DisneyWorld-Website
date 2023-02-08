@@ -4,12 +4,12 @@ const url = `http://api.weatherapi.com/v1/forecast.json?key=a33dec18f1bd45bda093
         .then(data => {
             const getCurrentWeather = data.current.temp_f;
             const getCurrentCondition = data.current.condition.text;
-           const currentWeather = `Current Weather: ${getCurrentWeather}\u00B0C, Current Condition: ${getCurrentCondition}`
+           const currentWeather = `Today's Current Weather: ${getCurrentWeather}\u00B0C, Current Condition: ${getCurrentCondition}`
             document.getElementById("current-weather").innerText = currentWeather;
 
            const daysData = [];
            const forecast = data.forecast.forecastday;
-            // forecast.forEach(day => {
+            forecast.forEach(day => {
                 daysData.push({
                     date: forecast.date,
                     high: forecast.day.maxtemp_f + "\u00B0" + "F",
@@ -17,7 +17,7 @@ const url = `http://api.weatherapi.com/v1/forecast.json?key=a33dec18f1bd45bda093
                     rainy: forecast.day.daily_chance_of_rain + "%", 
                 });
                 console.log(daysData); // how to get this to only print once vs say array 10 times?
-            // });
+            });
 
             // daysData.forEach(day => {
                 
