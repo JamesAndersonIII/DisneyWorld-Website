@@ -38,20 +38,22 @@ fetch(url)
 
       const day10 = ` ${daysData[9].date}: Low: ${daysData[9].low}°F, High: ${daysData[9].high}°F, Chance of Rain: ${daysData[9].rainy}%`;
 
-      let testWeather =
-        currentWeather +
-        day1 +
-        day2 +
-        day3 +
-        day4 +
-        day5 +
-        day6 +
-        day7 +
-        day8 +
-        day9 +
-        day10;
+      //   document.getElementById("day1").innerText = day1;
 
-      console.log(testWeather);
+      //   let testWeather =
+      //     currentWeather +
+      //     day1 +
+      //     day2 +
+      //     day3 +
+      //     day4 +
+      //     day5 +
+      //     day6 +
+      //     day7 +
+      //     day8 +
+      //     day9 +
+      //     day10;
+
+      //   console.log(testWeather);
     });
 
     //  const day1 = document.getElementById("day1");
