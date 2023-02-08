@@ -13,8 +13,20 @@ body{
     background-image: url("https://oceanschool.nfb.ca/_nuxt/img/heroCommunity.a21abf3.jpg");
     background-size: cover;
     background-attachment: fixed;
-  
     font-family: "Playfair Display";
     font-weight: normal;
     color: rgb(250, 245, 245);
+}
+
+.nav-item, .navbar-brand{
+    font-size: 25px;
+    color: black;
+    margin-right: 8rem;
+}
+
+#login-btn, #signup-btn{
+    border-radius: .5rem;
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-bg: black;
+    
 }

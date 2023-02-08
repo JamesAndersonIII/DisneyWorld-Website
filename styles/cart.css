@@ -1,12 +1,41 @@
-html{ 
-    box-sizing: border-box;
+main{
+    position: relative;
 }
 
-.fullCart{
-    border: 2px solid red;
+#cart-text {
+    background-image: url("https://cdn1.parksmedia.wdprapps.disney.com/resize/mwImage/1/1440/540/75/dam/disney-world/admission/WDW_SWGE_1440x540.png?1675790173554");
+    height: 55vh;
+}
+
+
+#fullCart{
+    border: 2px solid coral;
+    margin-top: 10%;
+}
+
+#cartPrice{
+    border: 2px solid coral;
+    margin-top: 10%;
+}
+
+#cart-text{
+    padding-top:20px;
 }
 
 #cartContainer{
-    display: flex;
-    
+    /* height: 90vh;
+    width: 90%; */
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+#quantity{
+    width: 40px;
+    background-color: rgb(242, 247, 252,.2);
+}
+
+footer{
+    position:absolute;
+    bottom: 0;
+    left: 1%;
 }

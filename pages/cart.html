@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Full Cart</title>
+    <title>Cart</title>
 
      <!-- reset page -->
      <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css"/>
@@ -12,23 +12,26 @@
      <!-- boostrap CSS -->
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
+      <!-- fonts -->
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/waltograph-disney" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kavoon&family=Playfair+Display&family=Rancho&family=Roboto:wght@500&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
      <!-- my CSS -->
+     <link rel="stylesheet" href="../styles/styles.css">
      <link rel="stylesheet" href="../styles/cart.css">
 </head>
 <body>
-    <section id="header-container" class="container">
-        <section id="weather-data">Placeholder for Weather</section>
-        <button id="login-btn">Login</button>
-        <button id="signup-btn">Sign Up</button>
-    </section>
-    <section id="navbar-container" class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+        <section id="navbar-container">
+        <nav class=" navbar navbar-expand-lg navbar-light">
             <!-- update href to point to landing page when clicked -->
             <a class="navbar-brand" href="./landing_page.html">DisneyWorld</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <section class="collapse navbar-collapse" id="navbar-collapsable">
+            <section class=" collapse navbar-collapse" id="navbar-collapsable">
                 <section class="navbar-nav">
                     <!-- Update hrefs to their respective pages -->
                     <a href="#" class="nav-item nav-link">Parks & Tickets</a>
@@ -37,27 +40,61 @@
                     <a href="./restaurants.html" class="nav-item nav-link">Restaurants</a>
                     <a href="#" class="nav-item nav-link">Cart</a>
                 </section>
+                
+                <!-- filler columns so buttons can be to right -->
+                <div class="col"></div>
+                
+                <button class="me-3 col btn btn-light" id="login-btn">Login</button>
+                <button class="me-2 col btn btn-light" id="signup-btn">Sign Up</button>
             </section>
         </nav>
     </section>
+    </secion>
 
    <!-- container for cart items and total -->
+   <main> 
+    <section id="cart-text">
+        <h1 class="text-center">Your Cart</h2>
+    </section>
+  
     <section id="cartContainer">
         <!-- items will be added here -->
-        <article class="fullCart">
-            <p>item 1</p>
-            <p>item 2</p>
-            <p>item 3</p>
-        </article>
+        <section class="row">
+            <article class="col text-center">
+                <article id="fullCart">
+                    <p><span id="item">"Item Name":</span></p>
+                    <label for="quantity">Quantity:</label>
+                        <select id="quantity">
+                        <option value="1">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="3">4</option>
+                        <option value="3">5</option>
+                        <option value="3">6</option>
+                        <option value="3">7</option>
+                        <option value="3">8</option>
+                        <option value="3">9</option>
+                        <option value="3">10</option>
+                        <!-- add more options as needed -->
+                        </select>
+                    <p>Price: $<span id="price">*add prices*</span></p>
+                </article>
+            </article>
 
         <!-- price updates here -->
-        <article class="fullCart">
-            <p>Quantity</p>
-            <p>Price</p>
-            <p>Subtotal</p>
-            <p>Tax</p>
-        </article>
+            <article class="col text-center">
+                <article id="cartPrice">
+                    <p>Tax</p>
+                    <p>Subtotal</p>
+                </article>
+            </article>
+        </section>
     </section>
+</main>
+<footer>Vacation Questions? <br> 
+Call (407)-407-4070
+</footer>
     
     <!-- boostrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
