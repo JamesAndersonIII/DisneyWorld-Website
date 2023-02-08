@@ -1,40 +1,6 @@
-html{ 
-    box-sizing: border-box;
-}
-
-#header-container, #navbar-container{
-    font-family: "WaltographRegular";
-    background-color: rgb(248, 243, 243, .3);
-    padding-left: 2%;
-}
-
-
-body{
-    background-image: url("https://oceanschool.nfb.ca/_nuxt/img/heroCommunity.a21abf3.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-  
-    font-family: "Playfair Display";
-    font-weight: normal;
-    color: rgb(250, 245, 245);
-}
-
 #signupPage{
     font-size: 20px;
     margin-top: 5%;
-}
-
-.nav-item, .navbar-brand{
-    font-size: 25px;
-    color: black;
-    margin-right: 8rem;
-}
-
-#login-btn, #signup-btn{
-    border-radius: .5rem;
-    --bs-btn-hover-color: white;
-    --bs-btn-hover-bg: black;
-    
 }
 
 #submitForm{
@@ -59,4 +25,3 @@ body{
 
 
 /* security box */
-
