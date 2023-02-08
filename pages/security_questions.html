@@ -5,8 +5,85 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Security Questions</title>
+
+    <!-- reset page -->
+    <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css"/>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    
+    <!-- fonts -->
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/waltograph-disney" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kavoon&family=Playfair+Display&family=Rancho&family=Roboto:wght@500&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+    <!-- my CSS -->
+    <link rel="stylesheet" href="/styles/security_questions.css">
+    <link rel="stylesheet" href="/styles/styles.css">
 </head>
 <body>
-    <p>SECURITY QUESTIONS (WIP)</p>
+    <section id="navbar-container" >
+        <nav class=" navbar navbar-expand-lg navbar-light">
+            <!-- update href to point to landing page when clicked -->
+            <a class="navbar-brand" href="./landing_page.html">DisneyWorld</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <section class=" collapse navbar-collapse" id="navbar-collapsable">
+                <section class="navbar-nav">
+                    <!-- Update hrefs to their respective pages -->
+                    <div class="navLinks"> <a href="#" class="nav-item nav-link">Parks & Tickets</a> </div>
+                    <a href="#" class="nav-item nav-link">Places To Stay</a>
+                    <a href="#" class="nav-item nav-link">Things To Do</a>
+                    <a href="./restaurants.html" class="nav-item nav-link">Restaurants</a>
+                    <a href="#" class="nav-item nav-link">Cart</a>
+                </section>
+                
+                <!-- filler columns so buttons can be to right -->
+                <div class="col"></div>
+                
+                <button class="btn btn-light" id="login-btn">Login</button>
+                <button class="me-3 btn btn-light" id="signup-btn">Sign Up</button>
+            </section>
+        </nav>
+    </section>
+    
+    <section class="container">
+        <section class="row" id="securityQPage">
+            <article class="col text-center" id="form-article">
+                <form id="securityQForm">
+                    <div class="mb-3">
+                        <label for="securityQuestion1">*JS dynamically pulls Q1</label>
+                        <input type="text" class="form-control" id="securityAnswer1" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="securityQuestion2">*JS dynamically pulls Q2</label>
+                        <input type="text" class="form-control" id="securityAnswer2" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="securityQuestion3">*JS dynamically pulls Q3</label>
+                        <input type="text" class="form-control" id="securityAnswer2" required>
+                    </div>
+
+                    <section class="row text-center">
+                        <div class="col"></div>
+                        <article class="mt-4 col" id="secQSubmit">
+                            <div>
+                                <!-- Cancel button, when clicked redirects to landing page -->
+                                <button type="button" class="btn btn-dark mb-5 btn-lg" id="submitForm">Cancel</button>
+                                <!-- Submit button, when clicked, triggers a get request against the server's data.
+                                If valid, redirects to landing page w/name displayed. If invalid, create alert informing
+                                information is incorrect, and try again  -->
+                                <button type="submit" class="btn btn-dark mb-5 btn-lg" id="submitForm">Submit</button>
+                            </div>
+                        </article>
+                        <div class="col"></div>
+                    </section>
+                </form>
+            </article>
+        </section>
+    </section>
 </body>
 </html>

@@ -1,1 +1,91 @@
-/* to be fleshed out */
+html {
+    box-sizing: border-box;
+}
+
+#header-container,
+#navbar-container {
+    font-family: "WaltographRegular";
+    background-color: rgb(248, 243, 243, .3);
+    padding-left: 2%;
+}
+
+body {
+    background-image: url("https://oceanschool.nfb.ca/_nuxt/img/heroCommunity.a21abf3.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+
+    font-family: "Playfair Display";
+    font-weight: normal;
+    color: rgb(250, 245, 245);
+}
+
+h3 {
+    padding-top: 40px;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: white;
+}
+
+.nav-item,
+.navbar-brand {
+    font-size: 25px;
+    color: black;
+    margin-right: 2rem;
+}
+
+.button-p-tag {
+    margin: auto;
+}
+
+#login_input_form {
+    padding-top: 20px;
+}
+
+#signup-btn {
+    border-radius: .5rem;
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-bg: black;
+    width: 100px;
+}
+
+#username-div {
+    padding-bottom: 15px;
+}
+
+#username-input,
+#password-input {
+    margin: auto;
+}
+
+#username-label,
+#password-label {
+    font-size: 20px;
+}
+
+#login-btn {
+    border-radius: .5rem;
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-bg: black;
+    width: 100px;
+    margin-right: 15px;
+}
+
+#submitForm {
+    --bs-btn-hover-color: black;
+    --bs-btn-hover-bg: white;
+}
+
+#username-label,
+#password-label {
+    font-size: 20px;
+}
+
+.form-control {
+    width: 300px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
