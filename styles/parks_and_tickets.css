@@ -57,3 +57,41 @@
     flex-direction: column;
     align-items: center;
 }
+
+footer {
+    background-color: #fff;
+    padding: 20px 0;
+    border-top: 1px solid #ccc;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  li {
+    margin-left: 20px;
+  }
+  
+  a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #333;
+  }
