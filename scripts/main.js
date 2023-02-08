@@ -16,7 +16,7 @@ const url = `http://api.weatherapi.com/v1/forecast.json?key=a33dec18f1bd45bda093
                     low: forecast.day.mintemp_f + "\u00B0" + "F",
                     rainy: forecast.day.daily_chance_of_rain + "%", 
                 });
-                console.log(daysData);
+                console.log(daysData); // how to get this to only print once vs say array 10 times?
             // });
 
             // daysData.forEach(day => {
