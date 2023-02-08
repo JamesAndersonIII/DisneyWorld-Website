@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Places To Stay</title>
+    <link rel="stylesheet" href="/styles/places-to-stay.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+    <section id="header-container" class="container">
+        <!-- ToDo: Redirect w/JS to respective pages -->
+        <button id="login-btn">Login</button>
+        <button id="signup-btn">Sign Up</button>
+    </section>
+    <section id="navbar-container" class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="./landing_page.html">DisneyWorld</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <section class="collapse navbar-collapse" id="navbar-collapsable">
+                <section class="navbar-nav">
+                    <!-- Update hrefs to their respective pages -->
+                    <a href="#" class="nav-item nav-link">Parks & Tickets</a>
+                    <a href="#" class="nav-item nav-link">Places To Stay</a>
+                    <a href="#" class="nav-item nav-link">Things To Do</a>
+                    <a href="./restaurants.html" class="nav-item nav-link">Restaurants</a>
+                    <a href="#" class="nav-item nav-link">Cart</a>
+                </section>
+            </section>
+        </nav>
+    </section>
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+        </script>
+    <header id="star-wars-banner">
+        <img src="https://d3bo0mk5kk7egf.cloudfront.net/imgstore/ElementGalleryItems/attractions/Fullsize/Star-Wars-Land_Full_30578.jpg"
+            alt="Star Wars Hotel" width="1903px" height="713.63px">
+    </header>
+    <h2 id="title">Book Your Stay</h2>
+    <form class="booking-form">
+        <p>Hotel:
+            <select id="hotel-select">
+                <option value="">Select a hotel</option>
+                <option value="https://i.ytimg.com/vi/i0s6FSE-BUI/maxresdefault.jpg">Disney's All-Star Movies Resort</option>
+                <option value="https://i.ytimg.com/vi/yCeOpoPcOC0/maxresdefault.jpg">Disney's Animal Kingdom Lodge</option>
+                <option value="Disney's Art of Animation Resort">Disney's Art of Animation Resort</option>
+                <option value="Disney's Caribbean Beach Resort">Disney's Caribbean Beach Resort</option>
+                <option value="Disney's Contemporary Resort">Disney's Contemporary Resort</option>
+                <option value="Disney's Coronado Springs Resort">Disney's Coronado Springs Resort</option>
+                <option value="Disney's Grand Floridian Resort & Spa">Disney's Grand Floridian Resort & Spa</option>
+                <option value="Disney's Polynesian Village Resort">Disney's Polynesian Village Resort</option>
+                <option value="Disney's Pop Century Resort">Disney's Pop Century Resort</option>
+                <option value="Disney's Wilderness Lodge">Disney's Wilderness Lodge</option>
+                <option value="Disney's Yacht Club Resort">Disney's Yacht Club Resort</option>
+                <option value="The Cabins at Disney's Fort Wilderness Resort">The Cabins at Disney's Fort Wilderness
+                    Resort</option>
+                <option value="The Villas at Disney's Grand Floridian Resort & Spa">The Villas at Disney's Grand
+                    Floridian Resort & Spa</option>
+            </select>
+        </p>
+        <p>Check-in: <input type="date" name="check-in"></p>
+        <p>Check-out: <input type="date" name="check-out"></p>
+        <p>Adults (18+):
+            <select name="adults">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+        </p>
+        <p>Children:
+            <select name="children">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select>
+        </p>
+        <input id="book-btn" type="submit" value="Book">
+        <div id="hotel-image"></div>
+    </form>
+    </div>
+    <footer>
+        <div class="container">
+            <p>Copyright &copy; Disney World Vacation Planner 2023</p>
+            <a href="#">Return to Top</a>
+            <a href="landing_page.html">Home</a>
+            <a href="parks_and_tickets_page.html">Parks & Tickets</a>
+            <a href="restaurants.html">Restaurants</a>
+            <a href="things_to_do_page.html">Things To Do</a>
+            <a href="places-to-stay-page.html">Places To Stay</a>
+            <ul>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="/scripts/places-to-stay.js"></script>
+</body>
+
+</html>
