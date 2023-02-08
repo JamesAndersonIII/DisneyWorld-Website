@@ -1,58 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page</title>
-    <link rel="stylesheet" href="/styles/landing_page.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-</head>
-<body>
-    <section id="header-container" class="container">
-        <section id="weather-data">Placeholder for Weather</section>
-        <button id="login-btn">Login</button>
-        <button id="signup-btn">Sign Up</button>
+
+    <!-- reset page -->
+    <link
+      rel="stylesheet"
+      href="https://meyerweb.com/eric/tools/css/reset/reset.css"
+    />
+
+    <!-- boostrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <!-- fonts -->
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="https://fontlibrary.org//face/waltograph-disney"
+      type="text/css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kavoon&family=Playfair+Display&family=Rancho&family=Roboto:wght@500&family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- my CSS -->
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="/styles/landing_page.css" />
+  </head>
+  <body>
+    <section clas="row" id="header-container">
+      <article class="col" id="current-weather">
+        Place holder for weather
+      </article>
     </section>
-    <section id="navbar-container" class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <!-- update href to point to landing page when clicked -->
-            <a class="navbar-brand" href="./landing_page.html">DisneyWorld</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <section class="collapse navbar-collapse" id="navbar-collapsable">
-                <section class="navbar-nav">
-                    <!-- Update hrefs to their respective pages -->
-                    <a href="#" class="nav-item nav-link">Parks & Tickets</a>
-                    <a href="#" class="nav-item nav-link">Places To Stay</a>
-                    <a href="#" class="nav-item nav-link">Things To Do</a>
-                    <a href="./restaurants.html" class="nav-item nav-link">Restaurants</a>
-                    <a href="#" class="nav-item nav-link">Cart</a>
-                </section>
-            </section>
-        </nav>
+
+    <section id="navbar-container">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <!-- update href to point to landing page when clicked -->
+        <a class="navbar-brand" href="./landing_page.html">DisneyWorld</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <section class="collapse navbar-collapse" id="navbar-collapsable">
+          <section class="navbar-nav">
+            <!-- Update hrefs to their respective pages -->
+            <a href="parks_and_tickets_page.html" class="nav-item nav-link"
+              >Parks & Tickets</a
+            >
+            <a href="places-to-stay-page.html" class="nav-item nav-link"
+              >Places To Stay</a
+            >
+            <a href="#" class="nav-item nav-link">Things To Do</a>
+            <a href="./restaurants.html" class="nav-item nav-link"
+              >Restaurants</a
+            >
+            <a href="cart.html" class="nav-item nav-link">Cart</a>
+          </section>
+
+          <!-- filler columns so buttons can be to right -->
+          <div class="col"></div>
+
+          <button class="me-3 col btn btn-light" id="login-btn">Login</button>
+          <button class="me-2 col btn btn-light" id="signup-btn">
+            Sign Up
+          </button>
+        </section>
+      </nav>
     </section>
     <main>
-        <section id="main-container" class="container">
-            <section class="row">
-                <section class="col-md-3">Parks & Tickets Row Placeholder</section>
-            </section>
-            <section class="row">
-                <section class="col-md-3">Places To Stay Row Placeholder</section>
-            </section>
-            <section class="row">
-                <section class="col-md-3">Things To Do Row Placeholder</section>
-            </section>
-            <section class="row">
-                <section class="col-md-3">Restaurants Row Placeholder</section>
-            </section>
-            <section class="row">
-                <section class="col-md-3">Links Row Placeholder</section>
-            </section>
+      <section id="main-container" class="container">
+        <section class="row" id="pt-row">
+          <section class="col row-text top-row">
+            <h3 id="parks-h3">
+              <a class="link" href="./parks_and_tickets_page.html"
+                >Parks & Tickets</a
+              >
+            </h3>
+          </section>
         </section>
+        <section class="row" id="row-1">
+          <section class="col-md-3 image-container">
+            <!-- magic kingdom -->
+            <img
+              class="parks-img"
+              id="magic-kingdom"
+              src="https://justatinabit.com/wp-content/uploads/2016/01/walt-disney-world-magic-kingdom-orlando-tips-advice-2.jpg"
+              alt="Magic Kingdom shown in a picture"
+            />
+            <h4>Magic Kingdom</h4>
+          </section>
+          <!-- epcot -->
+          <section class="col-md-3 image-container" id="epcot-container">
+            <img
+              class="parks-img"
+              id="epcot"
+              src="https://cdn.britannica.com/64/152364-050-B53A8C81/Spaceship-Earth-Epcot-Walt-Disney-World-Resort.jpg"
+              alt="Epcot shown in a picture"
+            />
+            <h4>Epcot</h4>
+          </section>
+          <!-- hollywood studios -->
+          <section class="col-md-3 image-container">
+            <img
+              class="parks-img"
+              id="hollywood-studios"
+              src="https://a.cdn-hotels.com/gdcs/production0/d1832/9e7a908a-47a3-4e66-be7f-86dde89214ca.jpg?impolicy=fcrop&w=800&h=533&q=medium"
+            />
+            <h4>Hollywood Studios</h4>
+          </section>
+          <!-- animal kingdom -->
+          <section class="col-md-3 image-container">
+            <img
+              class="parks-img"
+              id="animal-kingdom"
+              src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Tree_of_Life%2C_Disney%27s_Animal_Kingdom.jpg"
+            />
+            <h4>Animal Kingdom</h4>
+          </section>
+        </section>
+        <section class="row" id="row-2">
+          <section class="col-md-3 row-text">Things To Do</section>
+        </section>
+        <section class="row" id="row-4">
+          <section class="col-md-3 row-text">Restaurants</section>
+        </section>
+      </section>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <!-- boostrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- momemnt.js script to format birthdate -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+    <!-- jQuery JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- my JS -->
+    <script src="/scripts/main.js"></script>
     <script src="/scripts/landing_page.js"></script>
-</body>
+    <footer>
+      <div class="container">
+        <p>Copyright &copy; Disney World Vacation Planner 2023</p>
+        <a href="#">Return to Top</a>
+        <a href="landing_page.html">Home</a>
+        <a href="parks_and_tickets_page.html">Parks & Tickets</a>
+        <a href="restaurants.html">Restaurants</a>
+        <a href="things_to_do_page.html">Things To Do</a>
+        <a href="places-to-stay-page.html">Places To Stay</a>
+        <ul>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>
