@@ -19,14 +19,22 @@ body{
 }
 
 .nav-item, .navbar-brand{
-    font-size: 25px;
+    font-size: 20px;
     color: black;
-    margin-right: 8rem;
+    margin-right: 100px;
+}
+
+#navbar-container{
+    position: relative;
 }
 
 #login-btn, #signup-btn{
     border-radius: .5rem;
     --bs-btn-hover-color: white;
     --bs-btn-hover-bg: black;
-    
+}
+
+#headerBtns{
+    position: absolute;
+    right: 0;
 }
