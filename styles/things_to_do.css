@@ -1,0 +1,101 @@
+#park_banner_image {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+}
+
+.top-row {
+  margin: 5px;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.bottom-row {
+  height: 350px;
+  width: 465px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#little-ones,
+#teens-tweens,
+#adults {
+  font-variant: JIS04;
+  width: 33%;
+  padding: 50px;
+  margin: 61px;
+}
+
+#title {
+  display: flex;
+  justify-content: center;
+  margin-top: 75px;
+  margin-bottom: 45px;
+}
+
+footer {
+  background-color: #fff;
+  padding: 20px 0;
+  border-top: 1px solid #ccc;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+p {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+li {
+  margin-left: 20px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #333;
+}
+
+#disney-springs {
+  margin-top: 10px;
+  margin-right: 25px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+#boardwalk {
+  margin-right: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 25px;
+}
+
+#drawn-to-life {
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-left: 25px;
+}
+
+#dining-shopping-concerts {
+  display: flex;
+  justify-content: center;
+}
