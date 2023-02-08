@@ -34,6 +34,10 @@ body{
     border-radius: .5rem;
     --bs-btn-hover-color: white;
     --bs-btn-hover-bg: black;
+    --bs-btn-padding-y: .5rem; 
+    --bs-btn-padding-x: .9rem;
+    --bs-btn-font-size: 1.1rem;
+    width: 90px;    
 }
 
 #headerBtns{

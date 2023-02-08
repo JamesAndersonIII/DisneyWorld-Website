@@ -41,10 +41,9 @@
                 <a href="#" class="nav-item nav-link">Cart</a>
             </section>
             
-            <!-- filler columns so buttons can be to right -->
-            <div class="col-2"></div>
-            
-            <button class="me-2 col btn btn-light" id="signup-btn">Login</button>
+            <section id="headerBtns">
+              <button onclick="window.location.href='./login_page.html'" class="me-3 btn btn-light" id="login-btn">Login</button>
+            </section>
         </section>
     </nav>
 </section>
@@ -56,38 +55,38 @@
               <form id="signupForm">
                   <div class="mb-3">
                       <label for="InputName" class="form-label">First Name</label>
-                      <input type="text" class="form-control" id="firstName" aria-describedby="firstNameInput">
+                      <input type="text" class="form-control" id="firstName" aria-describedby="firstNameInput" required/>
                       </div>
 
                   <div class="mb-3">
                       <label for="InputName" class="form-label">Last Name</label>
-                      <input type="text" class="form-control" id="lastName" aria-describedby="lastNameInput">
+                      <input type="text" class="form-control" id="lastName" aria-describedby="lastNameInput" required/>
                   </div>
 
                   <div class="mb-3">
                     <label for="birthdate" class="form-label">Birthdate</label>
-                    <input type="date" class="form-control" id="birthdate" placeholder= "Format: MM/DD/YYYY" aria-describedby="birthdateHelp">
+                    <input type="date" class="form-control" id="birthdate" placeholder= "Format: MM/DD/YYYY" aria-describedby="birthdateHelp" required/>
                   </div>
 
                   <div class="mb-3">
                       <label for="exampleInputEmail1" class="form-label">Email address</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required/>
                       <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                     </div>
 
                     <div class="mb-3">
                     <label for="InputPassword" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="InputPassword" aria-describedby="passwordHelpBlock">
+                    <input type="password" class="form-control" id="InputPassword" aria-describedby="passwordHelpBlock" required/>
                     <div class="form-text">Password must be 8-20 characters long, contain letters, <br> special characters, and numbers.</div>
                   </div>
                 </form>
           </article>
 
           <article class="col rightArticle">
-              <form action="" id="securityQAndA">
+              <form action="" id="securityQs">
                   <div class="form-group mb-5 col">
                       <label for="securityQuestion1">Security Question</label>
-                      <select class="form-control" id="securityQuestion1">
+                      <select class="form-control" id="securityQuestion1" required>
                       <option value="">Please select a question</option>
                       <option>What is your mother's maiden name?</option>
                       <option>What was the name of your first pet?</option>
@@ -96,11 +95,11 @@
                       <option>What is your childhood bestfriends first name?</option>
                       <option>What street was your elementary school on?</option>
                       </select>
-                </div>
+                  </div>
 
                   <div class="form-group mb-5 col">
                       <label for="securityQuestion2">Security Question</label>
-                      <select class="form-control" id="securityQuestion2">
+                      <select class="form-control" id="securityQuestion2" required>
                       <option value="">Please select a question</option>
                       <option>What is your mother's maiden name?</option>
                       <option>What was the name of your first pet?</option>
@@ -109,38 +108,41 @@
                       <option>What is your childhood bestfriends first name?</option>
                       <option>What street was your elementary school on?</option>
                       </select>
-                </div>
+                  </div>
 
-                <div class="form-group mb-5">
-                  <label for="securityQuestion3">Security Question</label>
-                  <select class="form-control" id="securityQuestion3">
-                  <option value="">Please select a question</option>
-                  <option>What is your mother's maiden name?</option>
-                  <option>What was the name of your first pet?</option>
-                  <option>What was your first car?</option>
-                  <option>Where did you meet your spouse?</option>
-                  <option>What is your childhood bestfriends first name?</option>
-                  <option>What street was your elementary school on?</option>
-                  </select>
-            </div>
+                  <div class="form-group mb-5">
+                    <label for="securityQuestion3">Security Question</label>
+                    <select class="form-control" id="securityQuestion3" required>
+                    <option value="">Please select a question</option>
+                    <option>What is your mother's maiden name?</option>
+                    <option>What was the name of your first pet?</option>
+                    <option>What was your first car?</option>
+                    <option>Where did you meet your spouse?</option>
+                    <option>What is your childhood bestfriends first name?</option>
+                    <option>What street was your elementary school on?</option>
+                    </select>
+                  </div>
+                  </form>
             </article>
 
             <article class="col rightArticle">
+              <form action="" id="securityAns">
               <div class="form-group mb-5 col">
                 <label for="securityAnswer1">Answer</label>
-                <input type="text" class="form-control" id="securityAnswer1">
+                <input type="text" class="form-control" id="securityAnswer1" required/>
               </div>
 
                 <div class="form-group mb-5 col">
                   <label for="securityAnswer2">Answer</label>
-                  <input type="text" class="form-control" id="securityAnswer2">
+                  <input type="text" class="form-control" id="securityAnswer2" required/>
                 </div>
 
                 <div class="form-group mb-5 col">
                   <label for="securityAnswer3">Answer</label>
-                  <input type="text" class="form-control" id="securityAnswer3">
+                  <input type="text" class="form-control" id="securityAnswer3" required/>
                 </div>
           </article>
+        </form>
       </section>
       
       <section class="row text-center">
@@ -151,15 +153,13 @@
           </div>
         </article>
         <div class="col"></div>
+      </section>
     </section>
 
     
     
     <!-- boostrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-
-    <!-- momemnt.js script to format birthdate -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 
     <!-- jQuery JS -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

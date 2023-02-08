@@ -41,11 +41,10 @@
                     <a href="#" class="nav-item nav-link">Cart</a>
                 </section>
                 
-                <!-- filler columns so buttons can be to right -->
-                <div class="col"></div>
-                
-                <button class="me-3 col btn btn-light" id="login-btn">Login</button>
-                <button class="me-2 col btn btn-light" id="signup-btn">Sign Up</button>
+                <section id="headerBtns">
+                    <button class="me-3 btn btn-light" id="login-btn">Login</button>
+                    <button class="me-2 btn btn-light" id="signup-btn">Sign Up</button>
+                  </section>
             </section>
         </nav>
     </section>
@@ -59,47 +58,80 @@
   
     <section id="cartContainer">
         <!-- items will be added here -->
-        <section class="row">
-            <article class="col text-center">
-                <article id="fullCart">
-                    <p><span id="item">"Item Name":</span></p>
-                    <label for="quantity">Quantity:</label>
-                        <select id="quantity">
-                        <option value="1">0</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="3">4</option>
-                        <option value="3">5</option>
-                        <option value="3">6</option>
-                        <option value="3">7</option>
-                        <option value="3">8</option>
-                        <option value="3">9</option>
-                        <option value="3">10</option>
-                        <!-- add more options as needed -->
-                        </select>
-                    <p>Price: $<span id="price">*add prices*</span></p>
+        <section id="cartBox">
+            <article id= "fullCart" >
+                
+                    <article>
+                        <p><span id="magic"></span></p>
+                        <label for="quantity">Quantity:</label>
+                            <input type="number" id="magicTix" value="0" min="0" max="10">
+                        <p>Price: $<span id="magicPrice">0</span></p>
                 </article>
+                    <article >
+                        <button type="button" class="btn btn-primary btn-sm" id="magic_btn">Add to Cart</button>
+                    </article>
+                    
+                    <article>
+                        <p><span id="epcot"></span></p>
+                        <label for="quantity">Quantity:</label>
+                            <input type="number" id="epcotTix" value="0" min="0" max="10">
+                        <p>Price: $<span id="epcotPrice">0</span></p>
+                    </article>
+                    <article>
+                        <button type="button" class="btn btn-primary btn-sm" id="epcot_btn">Add to Cart</button>
+                    </article>
+
+                    <article>
+                        <p><span id="studio"></span></p>
+                        <label for="quantity">Quantity:</label>
+                            <input type="number" id="studioTix" value="0" min="0" max="10">
+                        <p>Price: $<span id="studioPrice">0</span></p>
+                    </article>
+                    <article>
+                        <button type="button" class="btn btn-primary btn-sm" id="studio_btn">Add to Cart</button>
+                    </article>
+
+                    <article>
+                        <p><span id="animal"></span></p>
+                        <label for="quantity">Quantity:</label>
+                            <input type="number" id="animalTix" value="0" min="0" max="10">
+                        <p>Price: $<span id="animalPrice">0</span></p>
+                    </article>
+                    <article>
+                        <button type="button" class="btn btn-primary btn-sm" id="animal_btn">Add to Cart</button>
+                    </article>
+
+                    <article>
+                        <p></p>
+                        <p>Total: $<span id="cartTotal"></span></p>
+                    </article>
+                
+
+                    <div>
+                        <article id="test_hotel">
+                            <p><span id="item"></span></p>
+                            <!-- <label for="quantity">Quantity:</label>
+                            <input type="number" id="quantityHotel" value="0">
+                            <p>Price: $<span id="price">200</span></p> -->
+                        </article>
+                    </div>
             </article>
 
         <!-- price updates here -->
-            <article class="col text-center">
+            <!-- <article class="col text-center">
                 <article id="cartPrice">
-                    <p>Tax</p>
                     <p>Subtotal</p>
-                </article>
+                </article> -->
             </article>
         </section>
     </section>
 </main>
-<footer>Vacation Questions? <br> 
-Call (407)-407-4070
-</footer>
+
     
     <!-- boostrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
      <!-- my JS -->
-    <script src="../scripts/signup.js"></script>
+    <script src="../scripts/cart.js"></script>
 </body>
 </html>
