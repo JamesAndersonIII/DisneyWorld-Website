@@ -1,3 +1,48 @@
+html{ 
+  box-sizing: border-box;
+}
+
+#header-container, #navbar-container{
+  font-family: "WaltographRegular";
+  background-color: rgb(248, 243, 243, .3);
+  padding-left: 2%;
+}
+
+
+body{
+  background-image: url("https://oceanschool.nfb.ca/_nuxt/img/heroCommunity.a21abf3.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Playfair Display";
+  font-weight: normal;
+  color: rgb(250, 245, 245);
+}
+
+.nav-item, .navbar-brand{
+  font-size: 20px;
+  color: black;
+  margin-right: 100px;
+}
+
+#navbar-container{
+  position: relative;
+}
+
+#login-btn, #signup-btn{
+  border-radius: .5rem;
+  --bs-btn-hover-color: white;
+  --bs-btn-hover-bg: black;
+  --bs-btn-padding-y: .5rem; 
+  --bs-btn-padding-x: .9rem;
+  --bs-btn-font-size: 1.1rem;
+  width: 90px;    
+}
+
+#headerBtns{
+  position: absolute;
+  right: 0;
+}
+
 #park_banner_image {
   display: flex;
   align-items: stretch;
@@ -24,6 +69,7 @@
 #teens-tweens,
 #adults {
   font-variant: JIS04;
+  font-size: 25px;
   width: 33%;
   padding: 50px;
   margin: 61px;
@@ -32,29 +78,28 @@
 .title {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   margin-top: 75px;
   margin-bottom: 45px;
+  padding-left: 20px;
 }
 
 footer {
-  background-color: #fff;
-  padding: 20px 0;
-  border-top: 1px solid #ccc;
+  background-color: rgb(232, 230, 240, .2);
+  padding-left: 20px;
+  padding-top: 25px;
+  border-top: 1px solid rgb(102, 84, 206);
 }
 
 .container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+  height: 50px;
 }
 
 p {
   margin: 0;
   font-size: 14px;
-  color: #333;
 }
 
 ul {
@@ -71,7 +116,6 @@ li {
 a {
   text-decoration: none;
   font-size: 14px;
-  color: #333;
 }
 
 #disney-springs {

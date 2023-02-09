@@ -32,8 +32,6 @@ h1{
 }
 
 #cartContainer{
-    /* height: 90vh;
-    width: 90%; */
     padding-left: 2%;
     padding-right: 2%;
 }
@@ -74,3 +72,16 @@ h1{
     --bs-btn-hover-bg: white;
     --bs-btn-color: white;
 }
+
+footer {
+    background-color: rgb(232, 230, 240, .2);
+    padding-left: 20px;
+    padding-top: 25px;
+    border-top: 1px solid rgb(102, 84, 206);
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+  }
