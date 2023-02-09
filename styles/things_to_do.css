@@ -87,10 +87,11 @@ body {
 }
 
 footer {
-  background-color: rgb(232, 230, 240, 0.2);
+  background-color: rgb(232, 230, 240, .2);
   padding-left: 20px;
   padding-top: 25px;
   border-top: 1px solid rgb(102, 84, 206);
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .container {

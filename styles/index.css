@@ -4,6 +4,10 @@ h4 {
 
 }
 
+#header-container, #navbar-container{
+    padding-top: 2px;
+}
+
 .row-text {
     font-size: 40px;
     vertical-align: middle;
@@ -171,4 +175,5 @@ h4 {
     transform: scale(1.1);
     text-decoration: underline white;
 }
+
 

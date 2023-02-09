@@ -1,32 +1,4 @@
-body{
-  background-image: url("https://oceanschool.nfb.ca/_nuxt/img/heroCommunity.a21abf3.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-weight: normal;
-   color: black; 
-}
 
-#header-container, #navbar-container{
-  font-family: "WaltographRegular";
-  background-color: rgb(248, 243, 243, .3);
-  padding-left: 2%;
-}
-
-.nav-item, .navbar-brand{
-  font-size: 20px;
-  color: black;
-  margin-right: 100px;
-}
-
-#navbar-container{
-  position: relative;
-}
-
-#headerBtns{
-  position: absolute;
-  right: 0;
-}
 
 #park_banner_image {
   display: flex;
@@ -104,6 +76,7 @@ footer {
   padding-left: 20px;
   padding-top: 25px;
   border-top: 1px solid rgb(102, 84, 206);
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .container {
@@ -115,7 +88,7 @@ footer {
 p {
   margin: 0;
   font-size: 17px;
-  color: #0c0c0c;
+  color: white;
 }
 
 ul {
