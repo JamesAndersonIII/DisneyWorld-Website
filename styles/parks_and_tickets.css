@@ -1,5 +1,3 @@
-
-
 #park_banner_image {
   display: flex;
   align-items: stretch;
@@ -72,11 +70,11 @@
 }
 
 footer {
-  background-color: rgb(232, 230, 240, .2);
+  background-color: rgb(232, 230, 240, 0.2);
   padding-left: 20px;
   padding-top: 25px;
   border-top: 1px solid rgb(102, 84, 206);
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .container {
@@ -113,18 +111,27 @@ a {
   margin: 25px;
 }
 
-.submitForm{
+.submitForm {
   --bs-btn-hover-color: black;
   --bs-btn-hover-bg: white;
   --bs-btn-bg: black;
 }
 
-#login-btn, #signup-btn{
-  border-radius: .5rem;
+#login-btn,
+#signup-btn {
+  border-radius: 0.5rem;
   --bs-btn-hover-color: white;
   --bs-btn-hover-bg: black;
-  --bs-btn-padding-y: .5rem; 
-  --bs-btn-padding-x: .9rem;
+  --bs-btn-padding-y: 0.5rem;
+  --bs-btn-padding-x: 0.9rem;
   --bs-btn-font-size: 1.1rem;
-  width: 90px;    
+  width: 90px;
+}
+
+.image {
+  transition: transform 0.2s ease-in-out;
+}
+
+.image:hover {
+  transform: scale(1.1);
 }
