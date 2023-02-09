@@ -7,18 +7,28 @@ main{
     background-attachment: fixed;
     background-size: contain;
     height: 69vh;
-    
+    padding-top: 13%;
+    font-family: "WaltographRegular";
+}
+
+h1{
+    font-size: 100px;
+    color: black;
 }
 
 
 #fullCart{
-    border: 2px solid coral;
     margin-top: 5%;
 }
 
+.card{
+    background-color: rgb(240, 248, 255, .3);
+    margin-bottom: 30%;
+}
 
-#cart-text{
-    padding-top:20px;
+.card-img-top{
+    max-width: 350px;
+    height: 170px;
 }
 
 #cartContainer{
@@ -36,4 +46,31 @@ main{
 .submitForm{
     --bs-btn-hover-color: black;
     --bs-btn-hover-bg: white;
+    --bs-btn-bg: black;
+}
+
+
+#totalBtn{
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-bg: black;
+    --bs-btn-bg: black; 
+    width: 115px;
+    margin-left: 45%;
+    margin-bottom: 2%;
+}
+
+#cartResetBtn{
+    --bs-btn-bg: rgba(113, 0, 128, 0.849);
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-bg: rgba(113, 0, 128, 0.849);
+    --bs-btn-color: white;
+    margin-left: 20px;
+    margin-bottom: 2%;
+}
+
+#animalResetBtn, #magicResetBtn, #epcotResetBtn, #studioResetBtn{
+    --bs-btn-bg: purple;
+    --bs-btn-hover-color: purple;
+    --bs-btn-hover-bg: white;
+    --bs-btn-color: white;
 }

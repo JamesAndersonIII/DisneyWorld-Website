@@ -53,57 +53,96 @@
    <!-- container for cart items and total -->
    <main> 
     <section id="cart-text">
-        <h1 class="text-center">Your Cart</h2>
+        <h1 class="text-center">Your Cart</h1>
     </section>
   
     <section id="cartContainer">
         <!-- items will be added here -->
         <section id="cartBox">
-            <article id= "fullCart" >
-                
-                    <article>
-                        <p><span id="magic"></span></p>
-                        <label for="quantity">Quantity:</label>
-                            <input class="quantity" type="number" id="magicTix" value="0" min="0" max="10">
-                        <p>Price: $<span id="magicPrice">0</span></p>
-                </article>
-                    <article >
-                        <button type="button" class="btn btn-dark btn-sm submitForm" id="magic_btn">Add to Cart</button>
-                    </article>
-                    
-                    <article>
-                        <p><span id="epcot"></span></p>
-                        <label for="quantity">Quantity:</label>
-                            <input class="quantity" type="number" id="epcotTix" value="0" min="0" max="10">
-                        <p>Price: $<span id="epcotPrice">0</span></p>
-                    </article>
-                    <article>
-                        <button type="button" class="btn btn-dark btn-sm submitForm" id="epcot_btn">Add to Cart</button>
-                    </article>
+            <article id= "fullCart" > 
+                    <article class="row">
+                        <div class="col-1"></div>
+                        <!-- <div class="col-2"></div>
+                        <div class="col-2"></div>
+                        <div class="col-2"></div> -->
+                        <!-- magic kingdom -->
+                        <section class="col text-center">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="https://c4.wallpaperflare.com/wallpaper/712/682/425/disney-walt-disney-world-castle-disneyland-wallpaper-preview.jpg" alt="Disney Magic Kingdom Castle">
+                            <div class="card-body">
+                              <h5 class="card-title">Magic Kingdom Ticket(s)</h5>
+                              <article class="quantPrice">
+                                <label for="quantity">Quantity:</label>
+                                <input class="quantity" type="number" id="magicTix" value="0" min="0" max="10">
+                                <p>Price: $<span id="magicPrice">0</span></p>
+                        <article>
+                            <button type="button" class="btn btn-dark btn-sm submitForm" id="magic_btn">Add to Cart</button>
+                            <button type="button" class="btn btn-sm submitForm" id="magicResetBtn">Reset</button>
+                        </article>
+                            </div>
+                          </div> 
+                        </section>
 
-                    <article>
-                        <p><span id="studio"></span></p>
-                        <label for="quantity">Quantity:</label>
-                            <input class="quantity" type="number" id="studioTix" value="0" min="0" max="10">
-                        <p>Price: $<span id="studioPrice">0</span></p>
-                    </article>
-                    <article>
-                        <button type="button" class="btn btn-dark btn-sm submitForm" id="studio_btn">Add to Cart</button>
-                    </article>
+                        <!-- epcot -->
+                        <section class="col text-center">
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="https://wallpaperaccess.com/full/244387.jpg" alt="Disney Epcot ball">
+                                <div class="card-body">
+                                  <h5 class="card-title">Epcot Ticket(s)</h5>
+                                  <article class="quantPrice">
+                                    <label for="quantity">Quantity:</label>
+                                    <input class="quantity" type="number" id="epcotTix" value="0" min="0" max="10">
+                                    <p>Price: $<span id="epcotPrice">0</span></p>
+                            <article>
+                                <button type="button" class="btn btn-dark btn-sm submitForm" id="epcot_btn">Add to Cart</button>
+                                <button type="button" class="btn btn-sm submitForm" id="epcotResetBtn">Reset</button>
+                            </article>
+                                </div>
+                              </div> 
+                            </section>  
 
-                    <article>
-                        <p><span id="animal"></span></p>
-                        <label for="quantity">Quantity:</label>
-                            <input class="quantity" type="number" id="animalTix" value="0" min="0" max="10">
-                        <p>Price: $<span id="animalPrice">0</span></p>
-                    </article>
-                    <article>
-                        <button type="button" class="btn btn-dark btn-sm submitForm" id="animal_btn">Add to Cart</button>
-                    </article>
+                            <!-- Hollywood Studios -->
+                            <section class="col text-center">
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="http://photos.prnewswire.com/prnfull/20160219/335168" alt="Disney Hollywood studios with star wars and fireworks">
+                                <div class="card-body">
+                                  <h5 class="card-title">Hollywood Studios Ticket(s)</h5>
+                                  <article class="quantPrice">
+                                    <label for="quantity">Quantity:</label>
+                                    <input class="quantity" type="number" id="studioTix" value="0" min="0" max="10">
+                                    <p>Price: $<span id="studioPrice">0</span></p>
+                            <article>
+                                <button type="button" class="btn btn-dark btn-sm submitForm" id="studio_btn">Add to Cart</button>
+                                <button type="button" class="btn btn-sm submitForm" id="studioResetBtn">Reset</button>
+                            </article>
+                                </div>
+                              </div> 
+                            </section>
 
+                            <!-- animal kingdom -->
+                            <section class="col text-center">
+                                <div class="card" style="width: 18rem;">
+                                    <img class="card-img-top" src="https://i.ytimg.com/vi/SSpdTKPTVjs/maxresdefault.jpg" alt="Disney Animal Kingdom tree">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Animal Kingdom Ticket(s)</h5>
+                                      <article class="quantPrice">
+                                        <label for="quantity">Quantity:</label>
+                                        <input class="quantity" type="number" id="animalTix" value="0" min="0" max="10">
+                                        <p>Price: $<span id="animalPrice">0</span></p>
+                                <article>
+                                    <button type="button" class="btn btn-dark btn-sm submitForm" id="animal_btn">Add to Cart</button>
+                                    <button type="button" class="btn btn-sm submitForm" id="animalResetBtn">Reset</button>
+                                </article>
+                                    </div>
+                                  </div> 
+                                </section>
+                            </article> 
+                            
                     <article>
-                        <p></p>
-                        <p>Total: $<span id="cartTotal"></span></p>
+                        <button type="button" class="btn btn-dark" id="totalBtn">Total: $<span id="cartTotal"></span>
+                        </button>
+                        <button type="button" class="btn" id="cartResetBtn">Empty Cart<span id="zeroTotal"></span>
+                        </button>
                     </article>
             </article>
             
