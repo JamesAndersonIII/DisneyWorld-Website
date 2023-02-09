@@ -29,7 +29,7 @@
   margin: 61px;
 }
 
-#title {
+.title {
   display: flex;
   justify-content: center;
   margin-top: 75px;
@@ -98,4 +98,12 @@ a {
 #dining-shopping-concerts {
   display: flex;
   justify-content: center;
+}
+
+.images {
+  transition: transform 0.2s ease-in-out;
+}
+
+.images:hover {
+  transform: scale(1.1);
 }
