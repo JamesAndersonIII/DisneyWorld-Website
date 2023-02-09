@@ -6,6 +6,7 @@ main{
     background-image: url("https://cdn1.parksmedia.wdprapps.disney.com/resize/mwImage/1/1440/540/75/dam/disney-world/admission/WDW_SWGE_1440x540.png?1674502817666");
     background-attachment: fixed;
     background-size: contain;
+    background-repeat: no-repeat;
     height: 69vh;
     padding-top: 13%;
     font-family: "WaltographRegular";

@@ -5,6 +5,6 @@ fetch(url)
   .then((data) => {
     const getCurrentWeather = data.current.temp_f;
     const getCurrentCondition = data.current.condition.text;
-    const currentWeather = `Current Weather: ${getCurrentWeather}\u00B0C, Current Condition: ${getCurrentCondition}`;
+    const currentWeather = `Current Weather in Orlando: ${getCurrentWeather}\u00B0C, Current Condition: ${getCurrentCondition}`;
     document.getElementById("current-weather").innerText = currentWeather;
   });
