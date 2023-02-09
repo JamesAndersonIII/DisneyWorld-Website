@@ -1,0 +1,65 @@
+/* template for header styles */
+
+html{ 
+    box-sizing: border-box;
+}
+
+#header-container, #navbar-container{
+    font-family: "WaltographRegular";
+    background-color: rgb(248, 243, 243, .3);
+    padding-left: 2%;
+}
+
+#current-weather{
+    text-decoration: none;
+    color: black;
+}
+
+#weather-text{
+    background-image: url("https://img.freepik.com/free-vector/blue-cloudy-daylight-background-weather-design_33099-512.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    height: 30vh;
+    padding-top: 5%;
+}
+
+body{
+    background-image: url("https://oceanschool.nfb.ca/_nuxt/img/heroCommunity.a21abf3.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Playfair Display";
+    font-weight: normal;
+    color: rgb(250, 245, 245);
+}
+
+.nav-item, .navbar-brand{
+    font-size: 20px;
+    color: black;
+    margin-right: 100px;
+}
+
+#navbar-container{
+    position: relative;
+}
+
+#login-btn, #signup-btn{
+    border-radius: .5rem;
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-bg: black;
+    --bs-btn-padding-y: .5rem; 
+    --bs-btn-padding-x: .9rem;
+    --bs-btn-font-size: 1.1rem;
+    width: 90px;    
+}
+
+#headerBtns{
+    position: absolute;
+    right: 0;
+}
+
+#tenDay{
+    padding-left: 35%;
+    margin-top: 5%;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

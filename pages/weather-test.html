@@ -20,50 +20,29 @@
 
     <!-- my CSS -->
     <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/weather.css">
     
 </head>
 <body>
 
   <section id="header-container">
-    
     <article id="current-weather"></article>
-
-    <article class="col" id="day1"></article>
-
-    <article class="col" id="day2"></article>
-
-    <article class="col" id="day3"></article>
-
-    <article class="col" id="day4"></article>
-
-    <article class="col" id="day5"></article>
-
-    <article class="col" id="day6"></article>
-
-    <article class="col" id="day7"></article>
-
-    <article class="col" id="day8"></article>
-
-    <article class="col" id="day9"></article>
-
-    <article class="col" id="day10"></article>
     </section>
     
     <section id="navbar-container" >
       <nav class=" navbar navbar-expand-lg navbar-light">
-          <a class="navbar-brand" href="./landing_page.html">DisneyWorld</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <section class=" collapse navbar-collapse" id="navbar-collapsable">
-              <section class="navbar-nav">
-                  <!-- Update hrefs to their respective pages -->
-                  <a href="#" class="nav-item nav-link">Parks & Tickets</a>
-                  <a href="#" class="nav-item nav-link">Places To Stay</a>
-                  <a href="#" class="nav-item nav-link">Things To Do</a>
-                  <a href="./restaurants.html" class="nav-item nav-link">Restaurants</a>
-                  <a href="#" class="nav-item nav-link">Cart</a>
-              </section>
+        <a class="navbar-brand" href="../index.html">DisneyWorld</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <section class=" collapse navbar-collapse" id="navbar-collapsable">
+          <section class="navbar-nav">
+              <a href="./parks_and_tickets_page.html" class="nav-item nav-link">Parks & Tickets</a>
+              <a href="./places_to_stay_page.html" class="nav-item nav-link">Places To Stay</a>
+              <a href="./things_to_do_page.html" class="nav-item nav-link">Things To Do</a>
+              <a href="./restaurants.html" class="nav-item nav-link">Restaurants</a>
+              <a href="./cart.html" class="nav-item nav-link">Cart</a>
+          </section>
               
               <section id="headerBtns">
                 <button class="me-3 btn btn-light" id="login-btn">Login</button>
@@ -72,6 +51,40 @@
           </section>
       </nav>
     </section>
+
+    <section> 
+      <section id="weather-text">
+        <h1 class="text-center">10 Day Weather Forcast</h1>
+    </section>
+    </section>
+    <main id="tenDay">
+      <span class="border border-light" id="day1"></span>
+      <p id="day2"></p>
+      <p id="day3"></p>
+      <p id="day4"></p>
+      <p id="day5"></p>
+      <p id="day6"></p>
+      <p id="day7"></p>
+      <p id="day8"></p>
+      <p id="day9"></p>
+      <p id="day10"></p>
+
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>Copyright &copy; Disney World Vacation Planner 2023</p>
+        <a href="#">Return to Top</a>
+        <a href="../index.html">Home</a>
+        <a href="./places_to_stay_page.html">Parks & Tickets</a>
+        <a href="./restaurants.html">Restaurants</a>
+        <a href="./things_to_do_page.html">Things To Do</a>
+        <a href="./places_to_stay_page.html">Places To Stay</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Privacy Policy</a>
+        </div>
+    </footer>
  
 
  <!-- boostrap JS -->
@@ -79,9 +92,6 @@
 
  <!-- momemnt.js script to format birthdate -->
  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-
- <!-- jQuery JS -->
- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 
   <!-- my JS -->
  <script src="../scripts/main-weather.js"></script>
