@@ -1,3 +1,33 @@
+body{
+  background-image: url("https://oceanschool.nfb.ca/_nuxt/img/heroCommunity.a21abf3.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: normal;
+   color: black; 
+}
+
+#header-container, #navbar-container{
+  font-family: "WaltographRegular";
+  background-color: rgb(248, 243, 243, .3);
+  padding-left: 2%;
+}
+
+.nav-item, .navbar-brand{
+  font-size: 20px;
+  color: black;
+  margin-right: 100px;
+}
+
+#navbar-container{
+  position: relative;
+}
+
+#headerBtns{
+  position: absolute;
+  right: 0;
+}
+
 #park_banner_image {
   display: flex;
   align-items: stretch;
@@ -22,6 +52,7 @@
   height: 300px;
   padding: 20px;
   box-sizing: border-box;
+  width: 25%;
 }
 .add-to-cart-button {
   margin-top: auto;
@@ -30,6 +61,7 @@
 #title {
   display: flex;
   justify-content: center;
+  padding-top: 50px;
 }
 
 .add-to-cart-button {
@@ -42,6 +74,8 @@
   width: 33%;
   padding: 50px;
   margin: 60px;
+  margin-top: 20px;
+  padding-top: 10px;
 }
 
 .image-container {
@@ -66,24 +100,22 @@
 }
 
 footer {
-  background-color: #fff;
-  padding: 20px 0;
-  border-top: 1px solid #ccc;
+  background-color: rgb(232, 230, 240, .2);
+  padding-left: 20px;
+  padding-top: 25px;
+  border-top: 1px solid rgb(102, 84, 206);
 }
 
 .container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+  height: 50px;
 }
 
 p {
   margin: 0;
-  font-size: 14px;
-  color: #333;
+  font-size: 17px;
+  color: #0c0c0c;
 }
 
 ul {
@@ -106,4 +138,20 @@ a {
 #figure {
   justify-content: center;
   margin: 25px;
+}
+
+.submitForm{
+  --bs-btn-hover-color: black;
+  --bs-btn-hover-bg: white;
+  --bs-btn-bg: black;
+}
+
+#login-btn, #signup-btn{
+  border-radius: .5rem;
+  --bs-btn-hover-color: white;
+  --bs-btn-hover-bg: black;
+  --bs-btn-padding-y: .5rem; 
+  --bs-btn-padding-x: .9rem;
+  --bs-btn-font-size: 1.1rem;
+  width: 90px;    
 }

@@ -3,148 +3,151 @@ const tixPrice = 100;
 const hotelPrice = 200;
 const totalPrice = 0;
 const total = document.getElementById("cartTotal");
+const maxTix = "To purchase more than 10 tickets, please call group sales.";
 
-magic_btn.addEventListener("click", () => {
+// Magic Kingdom
+magic_btn.addEventListener("click", (e) => {
+  e.preventDefault();
   const counter = document.getElementById("magicTix");
   const pricing = document.getElementById("magicPrice");
 
   if (parseInt(counter.value) === maxValue) {
-    alert("To purchase more than 10 tickets, please call group sales.");
+    alert(maxTix);
   } else {
     counter.value = parseInt(counter.value) + 1;
     pricing.innerText = tixPrice * counter.value;
     getTotal();
+    resetBtns();
   }
-
-  const parkName = document.getElementById("magic");
-  parkName.innerText = "Magic Kingdom Ticket(s)";
 });
 
 magicTix.addEventListener("change", () => {
   const counter = document.getElementById("magicTix");
   const pricing = document.getElementById("magicPrice");
+  magicTix.addEventListener("keydown", (keyPress) => {
+    if (keyPress.key === "Enter") {
+      if (parseInt(counter.value) > maxValue) {
+        alert(maxTix);
+        counter.value = 10;
+      }
+    }
+  });
+
   if (parseInt(counter.value) !== 0) {
     pricing.innerText = parseInt(counter.value) * tixPrice;
-    const parkName = document.getElementById("magic");
-    parkName.innerText = "Magic Kingdom Ticket(s)";
   } else {
     pricing.innerText = 0;
   }
   getTotal();
+  resetBtns();
 });
 
-epcot_btn.addEventListener("click", () => {
+// Epcot
+epcot_btn.addEventListener("click", (e) => {
+  e.preventDefault();
   const counter = document.getElementById("epcotTix");
   const pricing = document.getElementById("epcotPrice");
   if (parseInt(counter.value) === maxValue) {
-    alert("To purchase more than 10 tickets, please call group sales.");
+    alert(maxTix);
   } else {
     counter.value = parseInt(counter.value) + 1;
     pricing.innerText = tixPrice * counter.value;
     getTotal();
+    resetBtns();
   }
-
-  const parkName = document.getElementById("epcot");
-  parkName.innerText = "Epcot Ticket(s)";
 });
 
 epcotTix.addEventListener("change", () => {
   const counter = document.getElementById("epcotTix");
   const pricing = document.getElementById("epcotPrice");
+  epcotTix.addEventListener("keydown", (keyPress) => {
+    if (keyPress.key === "Enter") {
+      if (parseInt(counter.value) > maxValue) {
+        alert(maxTix);
+        counter.value = 10;
+      }
+    }
+  });
+
   if (parseInt(counter.value) !== 0) {
     pricing.innerText = parseInt(counter.value) * tixPrice;
-    const parkName = document.getElementById("epcot");
-    parkName.innerText = "Epcot Ticket(s)";
   } else {
     pricing.innerText = 0;
   }
   getTotal();
+  resetBtns();
 });
 
-studio_btn.addEventListener("click", () => {
+// Hollywood Studios
+studio_btn.addEventListener("click", (e) => {
+  e.preventDefault();
   const counter = document.getElementById("studioTix");
   const pricing = document.getElementById("studioPrice");
   if (parseInt(counter.value) === maxValue) {
-    alert("To purchase more than 10 tickets, please call group sales.");
+    alert(maxTix);
   } else {
     counter.value = parseInt(counter.value) + 1;
     pricing.innerText = tixPrice * counter.value;
     getTotal();
+    resetBtns();
   }
-
-  const parkName = document.getElementById("studio");
-  parkName.innerText = "Hollywood Studios Ticket(s)";
 });
 
 studioTix.addEventListener("change", () => {
   const counter = document.getElementById("studioTix");
   const pricing = document.getElementById("studioPrice");
+  studioTix.addEventListener("keydown", (keyPress) => {
+    if (keyPress.key === "Enter") {
+      if (parseInt(counter.value) > maxValue) {
+        alert(maxTix);
+        counter.value = 10;
+      }
+    }
+  });
+
   if (parseInt(counter.value) !== 0) {
     pricing.innerText = parseInt(counter.value) * tixPrice;
-    const parkName = document.getElementById("studio");
-    parkName.innerText = "Hollywood Studio Ticket(s)";
   } else {
     pricing.innerText = 0;
   }
   getTotal();
+  resetBtns();
 });
 
-animal_btn.addEventListener("click", () => {
+// Animal Kingdom
+animal_btn.addEventListener("click", (e) => {
+  e.preventDefault();
   const counter = document.getElementById("animalTix");
   const pricing = document.getElementById("animalPrice");
   if (parseInt(counter.value) === maxValue) {
-    alert("To purchase more than 10 tickets, please call group sales.");
+    alert(maxTix);
   } else {
     counter.value = parseInt(counter.value) + 1;
     pricing.innerText = tixPrice * counter.value;
     getTotal();
+    resetBtns();
   }
-
-  const parkName = document.getElementById("animal");
-  parkName.innerText = "Animal Kingdom Ticket(s)";
 });
 
 animalTix.addEventListener("change", () => {
   const counter = document.getElementById("animalTix");
   const pricing = document.getElementById("animalPrice");
+  animalTix.addEventListener("keydown", (keyPress) => {
+    if (keyPress.key === "Enter") {
+      if (parseInt(counter.value) > maxValue) {
+        alert(maxTix);
+        counter.value = 10;
+      }
+    }
+  });
+
   if (parseInt(counter.value) !== 0) {
     pricing.innerText = parseInt(counter.value) * tixPrice;
-    const parkName = document.getElementById("animal");
-    parkName.innerText = "Animal Kingdom Ticket(s)";
   } else {
     pricing.innerText = 0;
   }
   getTotal();
-});
-
-// hotel stuff
-
-animal_btn.addEventListener("click", () => {
-  const counter = document.getElementById("animalTix");
-  const pricing = document.getElementById("animalPrice");
-  if (parseInt(counter.value) === maxValue) {
-    alert("To purchase more than 10 tickets, please call group sales.");
-  } else {
-    counter.value = parseInt(counter.value) + 1;
-    pricing.innerText = tixPrice * counter.value;
-    getTotal();
-  }
-
-  const parkName = document.getElementById("animal");
-  parkName.innerText = "Animal Kingdom Ticket(s)";
-});
-
-animalTix.addEventListener("change", () => {
-  const counter = document.getElementById("animalTix");
-  const pricing = document.getElementById("animalPrice");
-  if (parseInt(counter.value) !== 0) {
-    pricing.innerText = parseInt(counter.value) * tixPrice;
-    const parkName = document.getElementById("animal");
-    parkName.innerText = "Animal Kingdom Ticket(s)";
-  } else {
-    pricing.innerText = 0;
-  }
-  getTotal();
+  resetBtns();
 });
 
 function getTotal() {
@@ -160,3 +163,63 @@ function getTotal() {
     parseInt(studioTotal.innerText) +
     parseInt(animalTotal.innerText);
 }
+
+// reset buttons
+function resetBtns() {
+  magicResetBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    const quant = document.getElementById("magicTix");
+    const price = document.getElementById("magicPrice");
+    quant.value = 0;
+    price.innerText = "0";
+    getTotal();
+  });
+
+  epcotResetBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    const quant = document.getElementById("epcotTix");
+    const price = document.getElementById("epcotPrice");
+    quant.value = 0;
+    price.innerText = "0";
+    getTotal();
+  });
+
+  studioResetBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    const quant = document.getElementById("studioTix");
+    const price = document.getElementById("studioPrice");
+    quant.value = 0;
+    price.innerText = "0";
+    getTotal();
+  });
+
+  animalResetBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    const quant = document.getElementById("animalTix");
+    const price = document.getElementById("animalPrice");
+    quant.value = 0;
+    price.innerText = "0";
+    getTotal();
+  });
+}
+
+cartResetBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  const quantMagic = document.getElementById("magicTix");
+  const priceMagic = document.getElementById("magicPrice");
+  const quantEpcot = document.getElementById("epcotTix");
+  const priceEpcot = document.getElementById("epcotPrice");
+  const quantStudio = document.getElementById("studioTix");
+  const priceStudio = document.getElementById("studioPrice");
+  const quantAnimal = document.getElementById("animalTix");
+  const priceAnimal = document.getElementById("animalPrice");
+  quantMagic.value = 0;
+  priceMagic.innerText = "0";
+  quantEpcot.value = 0;
+  priceEpcot.innerText = "0";
+  quantStudio.value = 0;
+  priceStudio.innerText = "0";
+  quantAnimal.value = 0;
+  priceAnimal.innerText = "0";
+  getTotal();
+});

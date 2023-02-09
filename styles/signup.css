@@ -3,7 +3,7 @@
     margin-top: 5%;
 }
 
-#submitForm{
+.submitForm{
     --bs-btn-hover-color: black;
     --bs-btn-hover-bg: white;
 }

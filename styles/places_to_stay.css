@@ -1,17 +1,15 @@
 footer {
-    background-color: #fff;
-    padding: 20px 0;
-    border-top: 1px solid #ccc;
-}
-
-.container {
+    background-color: rgb(232, 230, 240, .2);
+    padding-left: 20px;
+    padding-top: 25px;
+    border-top: 1px solid rgb(102, 84, 206);
+  }
+  
+  .container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
+    height: 50px;
+  }
 
 p {
     margin: 0;
