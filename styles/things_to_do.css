@@ -1,15 +1,15 @@
-html{ 
+html {
   box-sizing: border-box;
 }
 
-#header-container, #navbar-container{
+#header-container,
+#navbar-container {
   font-family: "WaltographRegular";
-  background-color: rgb(248, 243, 243, .3);
+  background-color: rgb(248, 243, 243, 0.3);
   padding-left: 2%;
 }
 
-
-body{
+body {
   background-image: url("https://oceanschool.nfb.ca/_nuxt/img/heroCommunity.a21abf3.jpg");
   background-size: cover;
   background-attachment: fixed;
@@ -18,27 +18,29 @@ body{
   color: rgb(250, 245, 245);
 }
 
-.nav-item, .navbar-brand{
+.nav-item,
+.navbar-brand {
   font-size: 20px;
   color: black;
   margin-right: 100px;
 }
 
-#navbar-container{
+#navbar-container {
   position: relative;
 }
 
-#login-btn, #signup-btn{
-  border-radius: .5rem;
+#login-btn,
+#signup-btn {
+  border-radius: 0.5rem;
   --bs-btn-hover-color: white;
   --bs-btn-hover-bg: black;
-  --bs-btn-padding-y: .5rem; 
-  --bs-btn-padding-x: .9rem;
+  --bs-btn-padding-y: 0.5rem;
+  --bs-btn-padding-x: 0.9rem;
   --bs-btn-font-size: 1.1rem;
-  width: 90px;    
+  width: 90px;
 }
 
-#headerBtns{
+#headerBtns {
   position: absolute;
   right: 0;
 }
@@ -63,7 +65,6 @@ body{
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-
 }
 
 #little-ones,
@@ -86,7 +87,7 @@ body{
 }
 
 footer {
-  background-color: rgb(232, 230, 240, .2);
+  background-color: rgb(232, 230, 240, 0.2);
   padding-left: 20px;
   padding-top: 25px;
   border-top: 1px solid rgb(102, 84, 206);
@@ -125,7 +126,7 @@ a {
   margin-bottom: 10px;
   margin-left: 10px;
   text-decoration: none;
-  color:white;
+  color: white;
 }
 
 #boardwalk {
@@ -134,7 +135,7 @@ a {
   margin-bottom: 10px;
   margin-left: 25px;
   text-decoration: none;
-  color:white;
+  color: white;
 }
 
 #drawn-to-life {
@@ -143,7 +144,7 @@ a {
   margin-bottom: 10px;
   margin-left: 25px;
   text-decoration: none;
-  color:white;
+  color: white;
 }
 
 #dining-shopping-concerts {
@@ -157,4 +158,10 @@ a {
 
 .images:hover {
   transform: scale(1.1);
+}
+
+h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
