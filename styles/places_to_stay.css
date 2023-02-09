@@ -3,6 +3,7 @@ footer {
     padding-left: 20px;
     padding-top: 25px;
     border-top: 1px solid rgb(102, 84, 206);
+    font-family: Georgia, 'Times New Roman', Times, serif;
   }
   
   .container {
@@ -14,7 +15,7 @@ footer {
 p {
     margin: 0;
     font-size: 14px;
-    color: #333;
+    color: white;
 }
 
 ul {
@@ -31,7 +32,7 @@ li {
 a {
     text-decoration: none;
     font-size: 14px;
-    color: #333;
+    color: black;
 }
 
 #star-wars-banner {

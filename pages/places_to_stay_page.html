@@ -88,18 +88,18 @@
                 <option value="https://i.ytimg.com/vi/Vlta5apIJ9c/maxresdefault.jpg">The Villas at Disney's Grand
                     Floridian Resort & Spa</option>
             </select>
-        </p>
-        <p>Check-in: <input type="date" name="check-in"></p>
-        <p>Check-out: <input type="date" name="check-out"></p>
-        <p>Adults (18+):
+        
+        Check-in: <input type="date" name="check-in">
+        Check-out: <input type="date" name="check-out">
+        Adults (18+):
             <select name="adults">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
                 <option value="4">4</option>
             </select>
-        </p>
-        <p>Children:
+        
+        Children:
             <select name="children">
                 <option value="0">0</option>
                 <option value="1">1</option>
@@ -109,8 +109,9 @@
                 <option value="5">5</option>
                 <option value="6">6</option>
             </select>
+            <button type="submit"  id="book-btn" class="btn btn-dark btn-sm submitForm">Book</button>
         </p>
-        <input id="book-btn" type="submit" value="Book">
+        
         <div id="hotel-image"></div>
     </form>
     </div>
