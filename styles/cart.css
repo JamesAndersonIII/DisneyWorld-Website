@@ -16,10 +16,6 @@ main{
     margin-top: 5%;
 }
 
-#cartPrice{
-    border: 2px solid coral;
-    margin-top: 10%;
-}
 
 #cart-text{
     padding-top:20px;
@@ -32,7 +28,12 @@ main{
     padding-right: 2%;
 }
 
-#quantityTix, #quantityHotel{
-    width: 40px;
+.quantity{
+    width: 43px;
     background-color: rgb(242, 247, 252,.2);
+}
+
+.submitForm{
+    --bs-btn-hover-color: black;
+    --bs-btn-hover-bg: white;
 }

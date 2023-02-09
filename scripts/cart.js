@@ -3,13 +3,15 @@ const tixPrice = 100;
 const hotelPrice = 200;
 const totalPrice = 0;
 const total = document.getElementById("cartTotal");
+const maxTix = "To purchase more than 10 tickets, please call group sales.";
 
+// Magic Kingdom
 magic_btn.addEventListener("click", () => {
   const counter = document.getElementById("magicTix");
   const pricing = document.getElementById("magicPrice");
 
   if (parseInt(counter.value) === maxValue) {
-    alert("To purchase more than 10 tickets, please call group sales.");
+    alert(maxTix);
   } else {
     counter.value = parseInt(counter.value) + 1;
     pricing.innerText = tixPrice * counter.value;
@@ -23,6 +25,15 @@ magic_btn.addEventListener("click", () => {
 magicTix.addEventListener("change", () => {
   const counter = document.getElementById("magicTix");
   const pricing = document.getElementById("magicPrice");
+  magicTix.addEventListener("keydown", (keyPress) => {
+    if (keyPress.key === "Enter") {
+      if (parseInt(counter.value) > maxValue) {
+        alert(maxTix);
+        counter.value = 10;
+      }
+    }
+  });
+
   if (parseInt(counter.value) !== 0) {
     pricing.innerText = parseInt(counter.value) * tixPrice;
     const parkName = document.getElementById("magic");
@@ -33,11 +44,12 @@ magicTix.addEventListener("change", () => {
   getTotal();
 });
 
+// Epcot
 epcot_btn.addEventListener("click", () => {
   const counter = document.getElementById("epcotTix");
   const pricing = document.getElementById("epcotPrice");
   if (parseInt(counter.value) === maxValue) {
-    alert("To purchase more than 10 tickets, please call group sales.");
+    alert(maxTix);
   } else {
     counter.value = parseInt(counter.value) + 1;
     pricing.innerText = tixPrice * counter.value;
@@ -51,6 +63,15 @@ epcot_btn.addEventListener("click", () => {
 epcotTix.addEventListener("change", () => {
   const counter = document.getElementById("epcotTix");
   const pricing = document.getElementById("epcotPrice");
+  epcotTix.addEventListener("keydown", (keyPress) => {
+    if (keyPress.key === "Enter") {
+      if (parseInt(counter.value) > maxValue) {
+        alert(maxTix);
+        counter.value = 10;
+      }
+    }
+  });
+
   if (parseInt(counter.value) !== 0) {
     pricing.innerText = parseInt(counter.value) * tixPrice;
     const parkName = document.getElementById("epcot");
@@ -61,11 +82,12 @@ epcotTix.addEventListener("change", () => {
   getTotal();
 });
 
+// Hollywood Studios
 studio_btn.addEventListener("click", () => {
   const counter = document.getElementById("studioTix");
   const pricing = document.getElementById("studioPrice");
   if (parseInt(counter.value) === maxValue) {
-    alert("To purchase more than 10 tickets, please call group sales.");
+    alert(maxTix);
   } else {
     counter.value = parseInt(counter.value) + 1;
     pricing.innerText = tixPrice * counter.value;
@@ -79,6 +101,15 @@ studio_btn.addEventListener("click", () => {
 studioTix.addEventListener("change", () => {
   const counter = document.getElementById("studioTix");
   const pricing = document.getElementById("studioPrice");
+  studioTix.addEventListener("keydown", (keyPress) => {
+    if (keyPress.key === "Enter") {
+      if (parseInt(counter.value) > maxValue) {
+        alert(maxTix);
+        counter.value = 10;
+      }
+    }
+  });
+
   if (parseInt(counter.value) !== 0) {
     pricing.innerText = parseInt(counter.value) * tixPrice;
     const parkName = document.getElementById("studio");
@@ -89,11 +120,12 @@ studioTix.addEventListener("change", () => {
   getTotal();
 });
 
+// Animal Kingdom
 animal_btn.addEventListener("click", () => {
   const counter = document.getElementById("animalTix");
   const pricing = document.getElementById("animalPrice");
   if (parseInt(counter.value) === maxValue) {
-    alert("To purchase more than 10 tickets, please call group sales.");
+    alert(maxTix);
   } else {
     counter.value = parseInt(counter.value) + 1;
     pricing.innerText = tixPrice * counter.value;
@@ -107,6 +139,15 @@ animal_btn.addEventListener("click", () => {
 animalTix.addEventListener("change", () => {
   const counter = document.getElementById("animalTix");
   const pricing = document.getElementById("animalPrice");
+  animalTix.addEventListener("keydown", (keyPress) => {
+    if (keyPress.key === "Enter") {
+      if (parseInt(counter.value) > maxValue) {
+        alert(maxTix);
+        counter.value = 10;
+      }
+    }
+  });
+
   if (parseInt(counter.value) !== 0) {
     pricing.innerText = parseInt(counter.value) * tixPrice;
     const parkName = document.getElementById("animal");
@@ -119,33 +160,33 @@ animalTix.addEventListener("change", () => {
 
 // hotel stuff
 
-animal_btn.addEventListener("click", () => {
-  const counter = document.getElementById("animalTix");
-  const pricing = document.getElementById("animalPrice");
-  if (parseInt(counter.value) === maxValue) {
-    alert("To purchase more than 10 tickets, please call group sales.");
-  } else {
-    counter.value = parseInt(counter.value) + 1;
-    pricing.innerText = tixPrice * counter.value;
-    getTotal();
-  }
+// animal_btn.addEventListener("click", () => {
+//   const counter = document.getElementById("animalTix");
+//   const pricing = document.getElementById("animalPrice");
+//   if (parseInt(counter.value) === maxValue) {
+//     alert(maxTix);
+//   } else {
+//     counter.value = parseInt(counter.value) + 1;
+//     pricing.innerText = tixPrice * counter.value;
+//     getTotal();
+//   }
 
-  const parkName = document.getElementById("animal");
-  parkName.innerText = "Animal Kingdom Ticket(s)";
-});
+//   const parkName = document.getElementById("animal");
+//   parkName.innerText = "Animal Kingdom Ticket(s)";
+// });
 
-animalTix.addEventListener("change", () => {
-  const counter = document.getElementById("animalTix");
-  const pricing = document.getElementById("animalPrice");
-  if (parseInt(counter.value) !== 0) {
-    pricing.innerText = parseInt(counter.value) * tixPrice;
-    const parkName = document.getElementById("animal");
-    parkName.innerText = "Animal Kingdom Ticket(s)";
-  } else {
-    pricing.innerText = 0;
-  }
-  getTotal();
-});
+// animalTix.addEventListener("change", () => {
+//   const counter = document.getElementById("animalTix");
+//   const pricing = document.getElementById("animalPrice");
+//   if (parseInt(counter.value) !== 0) {
+//     pricing.innerText = parseInt(counter.value) * tixPrice;
+//     const parkName = document.getElementById("animal");
+//     parkName.innerText = "Animal Kingdom Ticket(s)";
+//   } else {
+//     pricing.innerText = 0;
+//   }
+//   getTotal();
+// });
 
 function getTotal() {
   const magicTotal = document.getElementById("magicPrice");
