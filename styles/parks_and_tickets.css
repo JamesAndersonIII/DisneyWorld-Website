@@ -1,97 +1,109 @@
 #park_banner_image {
-    display: flex;
-    align-items: stretch;
-    flex-direction: column;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
 }
 
 .middle-row {
-    margin: 50px;
-    height: 400px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+  margin: 50px;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 #box5,
 #box6,
 #box7 {
-    width: 33%;
-    padding: 50px;
-    margin: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 300px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.add-to-cart-button {
+  margin-top: auto;
 }
 
 #title {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .add-to-cart-button {
-    display: flex;
-    justify-content: center;
-    margin: 10px;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
 }
 
 .after-hours {
-    width: 33%;
-    padding: 50px;
-    margin: 60px;
+  width: 33%;
+  padding: 50px;
+  margin: 60px;
 }
 
 .image-container {
-    border: 5px;
+  border: 5px;
 }
 
 #special-events {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 #theme-park-figures {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 #theme-parks-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 footer {
-    background-color: #fff;
-    padding: 20px 0;
-    border-top: 1px solid #ccc;
-  }
-  
-  .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-  
-  p {
-    margin: 0;
-    font-size: 14px;
-    color: #333;
-  }
-  
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
-  
-  li {
-    margin-left: 20px;
-  }
-  
-  a {
-    text-decoration: none;
-    font-size: 14px;
-    color: #333;
-  }
+  background-color: #fff;
+  padding: 20px 0;
+  border-top: 1px solid #ccc;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+p {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+li {
+  margin-left: 20px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #333;
+}
+
+#figure {
+  justify-content: center;
+  margin: 25px;
+}
