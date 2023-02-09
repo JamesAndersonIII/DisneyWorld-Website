@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+
+    <!-- reset page -->
+    <link
+      rel="stylesheet"
+      href="https://meyerweb.com/eric/tools/css/reset/reset.css"
+    />
+
+    <!-- boostrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <!-- fonts -->
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="https://fontlibrary.org//face/waltograph-disney"
+      type="text/css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kavoon&family=Playfair+Display&family=Rancho&family=Roboto:wght@500&family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- my CSS -->
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="/styles/index.css" />
+  </head>
+  <body>
+    <section clas="row" id="header-container">
+      <article class="col" id="current-weather">
+        Place holder for weather
+      </article>
+    </section>
+
+    <section id="navbar-container">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="./index.html">DisneyWorld</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <section class="collapse navbar-collapse" id="navbar-collapsable">
+          <section class="navbar-nav">
+            <!-- Update hrefs to their respective pages -->
+            <a
+              href="./pages/parks_and_tickets_page.html"
+              class="nav-item nav-link"
+              >Parks & Tickets</a
+            >
+            <a href="./pages/places_to_stay_page.html" class="nav-item nav-link"
+              >Places To Stay</a
+            >
+            <a href="./pages/things_to_do_page.html" class="nav-item nav-link"
+              >Things To Do</a
+            >
+            <a href="./pages/restaurants.html" class="nav-item nav-link"
+              >Restaurants</a
+            >
+            <a href="./pages/cart.html" class="nav-item nav-link">Cart</a>
+          </section>
+
+          <!-- filler columns so buttons can be to right -->
+          <div class="col"></div>
+
+          <button class="me-3 col btn btn-light" id="login-btn">Login</button>
+          <button class="me-2 col btn btn-light" id="signup-btn">
+            Sign Up
+          </button>
+        </section>
+      </nav>
+    </section>
+    <main>
+      <section id="main-container" class="container">
+        <!-- PARKS AND TICKETS -->
+        <section class="row link-row">
+          <section class="col row-text top-row">
+            <h3 id="parks-h3">
+              <a class="link" href="./pages/parks_and_tickets_page.html"
+                >Parks & Tickets</a
+              >
+            </h3>
+          </section>
+        </section>
+
+        <!-- ROW 1 -->
+        <section class="row" id="row-1">
+          <section class="col-md-3 image-container">
+            <!-- magic kingdom -->
+            <a
+              class="link"
+              href="https://disneyworld.disney.go.com/destinations/magic-kingdom/?ef_id=CjwKCAiArY2fBhB9EiwAWqHK6sg-URf0SnIgzruCTaF6lGsiEZa_mdkj68PZE8jrqkhuppF7_oz0DhoCjgoQAvD_BwE:G:s&s_kwcid=AL!5060!3!590827088345!e!!g!!magic%20kingdom%20theme%20park%20disney%20world&CMP=KNC-FY23_WDW_TRA_DXF_W365_TKT_TCKC_Tickets_EVRGRN_MKParks-Exact%7CG%7C5231213.RR.AM.01.01%7CM5JMF0M%7CBR%7C590827088345&keyword_id=kwd-830944659787%7Cdc%7Cmagic%20kingdom%20theme%20park%20disney%20world%7C590827088345%7Ce%7C5060:3%7C&gclid=CjwKCAiArY2fBhB9EiwAWqHK6sg-URf0SnIgzruCTaF6lGsiEZa_mdkj68PZE8jrqkhuppF7_oz0DhoCjgoQAvD_BwE"
+              ><img
+                href="https://disneyworld.disney.go.com/destinations/magic-kingdom/?ef_id=CjwKCAiArY2fBhB9EiwAWqHK6sg-URf0SnIgzruCTaF6lGsiEZa_mdkj68PZE8jrqkhuppF7_oz0DhoCjgoQAvD_BwE:G:s&s_kwcid=AL!5060!3!590827088345!e!!g!!magic%20kingdom%20theme%20park%20disney%20world&CMP=KNC-FY23_WDW_TRA_DXF_W365_TKT_TCKC_Tickets_EVRGRN_MKParks-Exact%7CG%7C5231213.RR.AM.01.01%7CM5JMF0M%7CBR%7C590827088345&keyword_id=kwd-830944659787%7Cdc%7Cmagic%20kingdom%20theme%20park%20disney%20world%7C590827088345%7Ce%7C5060:3%7C&gclid=CjwKCAiArY2fBhB9EiwAWqHK6sg-URf0SnIgzruCTaF6lGsiEZa_mdkj68PZE8jrqkhuppF7_oz0DhoCjgoQAvD_BwE"
+                class="parks-img"
+                id="magic-kingdom"
+                src="https://justatinabit.com/wp-content/uploads/2016/01/walt-disney-world-magic-kingdom-orlando-tips-advice-2.jpg"
+                alt="Magic Kingdom shown in a picture"
+              />
+              <h4>Magic Kingdom</h4></a
+            >
+          </section>
+          <!-- epcot -->
+          <section class="col-md-3 image-container" id="epcot-container">
+            <a
+              class="link"
+              href="https://disneyworld.disney.go.com/destinations/epcot/?ef_id=CjwKCAiArY2fBhB9EiwAWqHK6hq7hyehCApp8VXpzeuTnFAjilEP5Lx78BQGCoVo8hZBxRv-M3VaNRoCMEEQAvD_BwE:G:s&s_kwcid=AL!5060!3!589952675162!e!!g!!epcot%20theme%20park%20disney%20world&CMP=KNC-FY23_WDW_TRA_DXF_W365_TKT_TCKC_Tickets_EVRGRN_EParks-Exact%7CG%7C5231213.RR.AM.01.01%7CM5JMF0M%7CBR%7C589952675162&keyword_id=aud-688965564881:kwd-830944659307%7Cdc%7Cepcot%20theme%20park%20disney%20world%7C589952675162%7Ce%7C5060:3%7C&gclid=CjwKCAiArY2fBhB9EiwAWqHK6hq7hyehCApp8VXpzeuTnFAjilEP5Lx78BQGCoVo8hZBxRv-M3VaNRoCMEEQAvD_BwE"
+            >
+              <img
+                class="parks-img"
+                id="epcot"
+                src="https://cdn.britannica.com/64/152364-050-B53A8C81/Spaceship-Earth-Epcot-Walt-Disney-World-Resort.jpg"
+                alt="Epcot shown in a picture"
+              />
+              <h4>Epcot</h4>
+            </a>
+          </section>
+          <!-- hollywood studios -->
+          <section class="col-md-3 image-container">
+            <a
+              class="link"
+              href="https://disneyworld.disney.go.com/destinations/hollywood-studios/"
+              ><img
+                class="parks-img"
+                id="hollywood-studios"
+                src="https://a.cdn-hotels.com/gdcs/production0/d1832/9e7a908a-47a3-4e66-be7f-86dde89214ca.jpg?impolicy=fcrop&w=800&h=533&q=medium"
+              />
+              <h4 id="hollywood">Hollywood Studios</h4>
+            </a>
+          </section>
+          <!-- animal kingdom -->
+          <section class="col-md-3 image-container" id="ak-container">
+            <a
+              class="link"
+              href="https://disneyworld.disney.go.com/destinations/animal-kingdom/"
+              ><img
+                class="parks-img"
+                id="animal-kingdom"
+                src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Tree_of_Life%2C_Disney%27s_Animal_Kingdom.jpg"
+              />
+              <h4 id="ak-h4">Animal Kingdom</h4>
+            </a>
+          </section>
+        </section>
+
+        <!-- PLACES TO STAY -->
+        <section class="row link-row">
+          <section class="col row-text top-row">
+            <h3 id="parks-h3">
+              <a class="link" href="./pages/places_to_stay_page.html"
+                >Places To Stay</a
+              >
+            </h3>
+          </section>
+        </section>
+        <!-- ROW 2 -->
+        <section class="row" id="row-2">
+          <section class="col-md-3 image-container">
+            <!-- Disney's All-Star Movie Resort -->
+            <a
+              class="link"
+              href="https://disneyworld.disney.go.com/resorts/all-star-movies-resort/"
+            >
+              <img
+                class="parks-img"
+                id="all-star"
+                src="https://upgradedpoints.com/wp-content/uploads/2022/04/Disneys-All-Star-Movie-Resort-Toy-Story-Woody-rooms.jpg"
+                alt="Disneys-All-Star-Movie-Resort-Toy-Story-Woody-rooms"
+              />
+              <h4 class="resort">Disney's All-Star Movie Resort</h4>
+            </a>
+          </section>
+          <section class="col-md-3 image-container">
+            <a
+              class="link"
+              href="https://disneyworld.disney.go.com/resorts/caribbean-beach-resort/?CMP=OKC-80010399_GM_WDW_resort_disneyscaribbeanbeachresort_NA"
+              ><!-- Disney's Caribbean Beach Resort -->
+              <img
+                class="parks-img"
+                id="caribbean"
+                src="https://cache.undercovertourist.com/media_file/disneys-caribbean-beach-resort-928895-168cef2234b.jpg"
+                alt="Disneys-All-Star-Movie-Resort-Toy-Story-Woody-rooms"
+              />
+              <h4 class="resort">Disney's Caribbean Beach Resort</h4></a
+            >
+          </section>
+          <section class="col-md-3 image-container">
+            <a
+              class="link"
+              href="https://disneyworld.disney.go.com/resorts/animal-kingdom-lodge/"
+              ><!-- Disney's Animal Kingdom Lodge -->
+              <img
+                class="parks-img"
+                id="ak-lodge"
+                src="https://images.trvl-media.com/lodging/1000000/610000/602500/602436/e727da13.jpg?impolicy=resizecrop&rw=500&ra=fit"
+                alt="Disney's Animal Kingdom Lodge with animals in front"
+              />
+              <h4 class="resort">Disney's Animal Kingdom Lodge</h4></a
+            >
+          </section>
+          <section class="col-md-3 image-container">
+            <!-- Disney's Polynesian Village Resort -->
+            <a
+              class="link"
+              href="https://disneyworld.disney.go.com/resorts/polynesian-resort/?CMP=OKC-80010388_GM_WDW_resort_disneyspolynesianvillageresort_NA"
+            >
+              <img
+                class="parks-img"
+                id="polynesian"
+                src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/84/d6/0f/disney-s-polynesian-villas.jpg?w=700&h=-1&s=1"
+                alt="Disney's Polynesian Village Resort with people staying there. Water in the foreground"
+              />
+              <h4 class="polynesian-h4">Disney's Polynesian Village Resort</h4>
+            </a>
+          </section>
+        </section>
+
+        <!-- THINGS TO DO -->
+        <section class="row link-row">
+          <section class="col row-text top-row">
+            <h3 id="parks-h3">
+              <a class="link" href="./pages/things_to_do_page.html"
+                >Things To Do</a
+              >
+            </h3>
+          </section>
+        </section>
+        <!-- ROW 3 -->
+        <section class="row" id="row-3">
+          <section class="col-md-3 image-container">
+            <!-- RIDES -->
+            <a
+              class="link"
+              href="https://disneyworld.disney.go.com/attractions/#/thrill-rides/sort=alpha/"
+            >
+              <img
+                class="ttd-img"
+                id="rides"
+                src="https://www.tripsavvy.com/thmb/MEMTqrFanrfa0tpGrXf0zK3ShDE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/dumbo-the-flying-elephant-5b1aa3321d64040037d7e6f9.jpg"
+                alt="ride options at disneyworld"
+              />
+              <h4 class="thing-to-do">Rides</h4>
+            </a>
+          </section>
+          <section class="col-md-3 image-container">
+            <!-- SHOPPING -->
+            <a
+              class="link"
+              href="https://disneyworld.disney.go.com/shops/#/sort=alpha/"
+            >
+              <img
+                class="ttd-img"
+                id="shopping"
+                src="https://www.disneyfoodblog.com/wp-content/uploads/2021/05/2021-wdw-walt-disney-world-magic-kingdom-minnie-mickey-ears-shopping-merchandise-Box-Office-Gifts-10-scaled.jpg"
+                alt="Shopping options in Disneyworld"
+              />
+              <h4 class="thing-to-do">Shopping</h4>
+            </a>
+          </section>
+          <section class="col-md-3 image-container">
+            <!-- DINING -->
+            <a
+              class="link"
+              href="https://disneyworld.disney.go.com/dining/#/reservations-accepted,character-dining,buffet,casual-dining,family-style,fine-signature-dining,unique-themed-dining,counter-service,fast-casual,food-truck/"
+            >
+              <img
+                class="ttd-img"
+                id="dining"
+                src="https://www.travelandleisure.com/thmb/xFhlJdGuREk3clLzWqvX2O-4-TA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/topolinos-terrace-DINEDISNEY0821-52f047c67a35477489bf702499b68a55.jpg"
+                alt="dining options at disneyworld"
+              />
+              <h4 class="thing-to-do">Dining</h4>
+            </a>
+          </section>
+          <section class="col-md-3 image-container">
+            <!-- Special Event & Tours -->
+            <a
+              class="link"
+              href="https://disneyworld.disney.go.com/events-tours/#/sort=alpha/"
+            >
+              <img
+                class="ttd-img"
+                id="sp-events-tours"
+                src="https://www.disneytouristblog.com/wp-content/uploads/2021/08/halloween-decorations-magic-kingdom-disney-world-850.jpg"
+                alt="concert options at disneyworld"
+              />
+              <h4 id="sp-events" class="things-to-do">
+                Special Events & Tours
+              </h4>
+            </a>
+          </section>
+        </section>
+
+        <!-- RESTAURANTS -->
+        <section class="row link-row">
+          <section class="col row-text top-row">
+            <h3 id="parks-h3">
+              <a class="link" href="./pages/restaurants.html">Restaurants</a>
+            </h3>
+          </section>
+        </section>
+        <!-- ROW 4 -->
+        <section class="row" id="row-4">
+          <section class="col-md-3 image-container">
+            <!-- SPACE 220 -->
+            <a
+              class="link"
+              href="https://disneyworld.disney.go.com/dining/epcot/space-220/"
+            >
+              <img
+                class="restaurant-img"
+                id="space-220"
+                src="https://www.travelandleisure.com/thmb/WNzaeQVAUi6FUuWdH5q2EcLltm4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/dining-space-220-SPACEDISNEY1021-ba3c0d4f2c4f40cdbc7e0c67fe0d346c.jpg"
+                alt="Space 220 Restaurant"
+              />
+              <h4 class="restaurant">Space 220</h4>
+            </a>
+          </section>
+          <section class="col-md-3 image-container">
+            <!-- BE OUR GUEST RESTAURANT -->
+            <a
+              class="link"
+              href="https://disneyworld.disney.go.com/dining/magic-kingdom/be-our-guest-restaurant/"
+            >
+              <img
+                class="restaurant-img"
+                id="be-our-guest"
+                src="https://mickeyblog.com/wp-content/uploads/2018/12/Be-Our-Guest-Grand-Ballroom.jpg"
+                alt="Be Our Guest Restaurant Grand Ballroom with tables"
+              />
+              <h4 class="restaurant">Be Our Guest Restaurant</h4>
+            </a>
+          </section>
+          <section class="col-md-3 image-container">
+            <!-- CINDERELLA'S ROYAL TABLE -->
+            <a
+              class="link"
+              href="https://disneyworld.disney.go.com/dining/magic-kingdom/cinderella-royal-table/"
+            >
+              <img
+                class="restaurant-img"
+                id="cinderella"
+                src="https://www.disneyfoodblog.com/wp-content/uploads/2020/09/2020-wdw-magic-kingdom-cinderellas-royal-table-reopening-2.jpg"
+                alt="Cinderella's Royal Table Restaurant"
+              />
+              <h4 class="restaurant">Cinderella's Royal Table</h4>
+            </a>
+          </section>
+          <section class="col-md-3 image-container">
+            <!-- CHEF MICKEY'S -->
+            <a
+              class="link"
+              href="https://disneyworld.disney.go.com/dining/contemporary-resort/chef-mickeys/"
+            >
+              <img
+                class="restaurant-img"
+                id="chef-mickeys"
+                src="https://media.wdwnt.com/2021/05/chef-mickeys-may-2021-20-1786022-1200x800.jpg"
+                alt="Chef Mickey's Restaurant"
+              />
+              <h4 class="restaurant">Chef Mickey's</h4>
+            </a>
+          </section>
+        </section>
+      </section>
+    </main>
+
+    <!-- boostrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- momemnt.js script to format birthdate -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+    <!-- jQuery JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- my JS -->
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/index"></script>
+    <footer>
+      <div class="container">
+        <p>Copyright &copy; Disney World Vacation Planner 2023</p>
+        <a href="#">Return to Top</a>
+        <a href="index.html">Home</a>
+        <a href="./pages/parks_and_tickets_page.html">Parks & Tickets</a>
+        <a href="./pages/restaurants.html">Restaurants</a>
+        <a href="./pages/things_to_do_page.html">Things To Do</a>
+        <a href="./pages/places_to_stay_page.html">Places To Stay</a>
+        <ul>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
