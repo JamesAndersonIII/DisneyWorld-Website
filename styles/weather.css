@@ -28,7 +28,7 @@ html{
 
 .col-sm-5 {
     flex: 0 0 auto;
-    width: 24.666667%;
+    width: 20%;
 }
 
 
@@ -79,7 +79,7 @@ body{
 
 #tenDay{
     padding-left: 10%;
-    margin-top: 2%;
+    margin-top: 6%;
     color: black;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-bottom: 2%;
@@ -90,6 +90,7 @@ footer {
     padding-left: 15px;
     padding-top: 39px;
     border-top: 1px solid rgb(102, 84, 206);
+    margin-top: 5%;
   }
   
   .container {

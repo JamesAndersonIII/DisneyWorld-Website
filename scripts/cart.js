@@ -21,25 +21,24 @@ magic_btn.addEventListener("click", (e) => {
   }
 });
 
-magicTix.addEventListener("change", () => {
-  const counter = document.getElementById("magicTix");
+magicTix.addEventListener("keydown", (keyPress) => {
   const pricing = document.getElementById("magicPrice");
-  magicTix.addEventListener("keydown", (keyPress) => {
-    if (keyPress.key === "Enter") {
-      if (parseInt(counter.value) > maxValue) {
-        alert(maxTix);
-        counter.value = 10;
-      }
+  const counter = document.getElementById("magicTix");
+  if (keyPress.key === "Enter") {
+    if (parseInt(counter.value) > maxValue) {
+      alert(maxTix);
+      counter.value = 10;
     }
-  });
-
-  if (parseInt(counter.value) !== 0) {
-    pricing.innerText = parseInt(counter.value) * tixPrice;
-  } else {
-    pricing.innerText = 0;
   }
-  getTotal();
-  resetBtns();
+  magicTix.addEventListener("change", () => {
+    if (parseInt(counter.value) !== 0) {
+      pricing.innerText = parseInt(counter.value) * tixPrice;
+    } else {
+      pricing.innerText = 0;
+    }
+    getTotal();
+    resetBtns();
+  });
 });
 
 // Epcot
@@ -57,25 +56,24 @@ epcot_btn.addEventListener("click", (e) => {
   }
 });
 
-epcotTix.addEventListener("change", () => {
+epcotTix.addEventListener("keydown", (keyPress) => {
   const counter = document.getElementById("epcotTix");
-  const pricing = document.getElementById("epcotPrice");
-  epcotTix.addEventListener("keydown", (keyPress) => {
-    if (keyPress.key === "Enter") {
-      if (parseInt(counter.value) > maxValue) {
-        alert(maxTix);
-        counter.value = 10;
-      }
+  if (keyPress.key === "Enter") {
+    if (parseInt(counter.value) > maxValue) {
+      alert(maxTix);
+      counter.value = 10;
     }
-  });
-
-  if (parseInt(counter.value) !== 0) {
-    pricing.innerText = parseInt(counter.value) * tixPrice;
-  } else {
-    pricing.innerText = 0;
   }
-  getTotal();
-  resetBtns();
+  epcotTix.addEventListener("change", () => {
+    const pricing = document.getElementById("epcotPrice");
+    if (parseInt(counter.value) !== 0) {
+      pricing.innerText = parseInt(counter.value) * tixPrice;
+    } else {
+      pricing.innerText = 0;
+    }
+    getTotal();
+    resetBtns();
+  });
 });
 
 // Hollywood Studios
@@ -93,25 +91,24 @@ studio_btn.addEventListener("click", (e) => {
   }
 });
 
-studioTix.addEventListener("change", () => {
+studioTix.addEventListener("keydown", (keyPress) => {
   const counter = document.getElementById("studioTix");
   const pricing = document.getElementById("studioPrice");
-  studioTix.addEventListener("keydown", (keyPress) => {
-    if (keyPress.key === "Enter") {
-      if (parseInt(counter.value) > maxValue) {
-        alert(maxTix);
-        counter.value = 10;
-      }
+  if (keyPress.key === "Enter") {
+    if (parseInt(counter.value) > maxValue) {
+      alert(maxTix);
+      counter.value = 10;
     }
-  });
-
-  if (parseInt(counter.value) !== 0) {
-    pricing.innerText = parseInt(counter.value) * tixPrice;
-  } else {
-    pricing.innerText = 0;
   }
-  getTotal();
-  resetBtns();
+  studioTix.addEventListener("change", () => {
+    if (parseInt(counter.value) !== 0) {
+      pricing.innerText = parseInt(counter.value) * tixPrice;
+    } else {
+      pricing.innerText = 0;
+    }
+    getTotal();
+    resetBtns();
+  });
 });
 
 // Animal Kingdom
@@ -129,25 +126,24 @@ animal_btn.addEventListener("click", (e) => {
   }
 });
 
-animalTix.addEventListener("change", () => {
+animalTix.addEventListener("keydown", (keyPress) => {
   const counter = document.getElementById("animalTix");
   const pricing = document.getElementById("animalPrice");
-  animalTix.addEventListener("keydown", (keyPress) => {
-    if (keyPress.key === "Enter") {
-      if (parseInt(counter.value) > maxValue) {
-        alert(maxTix);
-        counter.value = 10;
-      }
+  if (keyPress.key === "Enter") {
+    if (parseInt(counter.value) > maxValue) {
+      alert(maxTix);
+      counter.value = 10;
     }
-  });
-
-  if (parseInt(counter.value) !== 0) {
-    pricing.innerText = parseInt(counter.value) * tixPrice;
-  } else {
-    pricing.innerText = 0;
   }
-  getTotal();
-  resetBtns();
+  animalTix.addEventListener("change", () => {
+    if (parseInt(counter.value) !== 0) {
+      pricing.innerText = parseInt(counter.value) * tixPrice;
+    } else {
+      pricing.innerText = 0;
+    }
+    getTotal();
+    resetBtns();
+  });
 });
 
 function getTotal() {
