@@ -65,7 +65,7 @@ fetch(url)
     const dayNine = document.getElementById("day9");
     const dayTen = document.getElementById("day10");
 
-    dayOne.innerHTML = day1;
+    dayOne.innerText = day1;
     dayTwo.innerText = day2;
     dayThree.innerText = day3;
     dayFour.innerText = day4;
