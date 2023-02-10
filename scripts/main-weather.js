@@ -16,39 +16,51 @@ fetch(url)
     });
     // console.log(daysData);
 
-    const day1 = `Today: <br> Low: ${daysData[0].low}°F <br> High: ${daysData[0].high}°F <br> Chance of Rain: ${daysData[0].rainy}%`;
+    const day1 = `Today: 
+    Low: ${daysData[0].low}°F 
+    High: ${daysData[0].high}°F 
+    Chance of Rain: ${daysData[0].rainy}%`;
+
     const day2 = ` ${daysData[1].date}: 
     Low: ${daysData[1].low}°F
     High: ${daysData[1].high}°F
     Chance of Rain: ${daysData[1].rainy}%`;
+
     const day3 = ` ${daysData[2].date}: 
     Low: ${daysData[2].low}°F
     High: ${daysData[2].high}°F
     Chance of Rain: ${daysData[2].rainy}%`;
+
     const day4 = ` ${daysData[3].date}: 
     Low: ${daysData[3].low}°F
     High: ${daysData[3].high}°F
     Chance of Rain: ${daysData[3].rainy}%`;
+
     const day5 = ` ${daysData[4].date}: 
     Low: ${daysData[4].low}°F
     High: ${daysData[4].high}°F
     Chance of Rain: ${daysData[4].rainy}%`;
+
     const day6 = ` ${daysData[5].date}: 
     Low: ${daysData[5].low}°F
     High: ${daysData[5].high}°F
     Chance of Rain: ${daysData[5].rainy}%`;
+
     const day7 = ` ${daysData[6].date}: 
     Low: ${daysData[6].low}°F
     High: ${daysData[6].high}°F
     Chance of Rain: ${daysData[6].rainy}%`;
+
     const day8 = ` ${daysData[7].date}: 
     Low: ${daysData[7].low}°F
     High: ${daysData[7].high}°F
     Chance of Rain: ${daysData[7].rainy}%`;
+
     const day9 = ` ${daysData[8].date}: 
     Low: ${daysData[8].low}°F
     High: ${daysData[8].high}°F
     Chance of Rain: ${daysData[8].rainy}%`;
+
     const day10 = ` ${daysData[9].date}: 
    Low: ${daysData[9].low}°
     High: ${daysData[9].high}°F
