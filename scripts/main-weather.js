@@ -8,6 +8,7 @@ fetch(url)
 
     forecast.forEach((day) => {
       daysData.push({
+        pic: day.day.condition.icon,
         date: day.date,
         high: day.day.maxtemp_f,
         low: day.day.mintemp_f,
@@ -67,24 +68,62 @@ fetch(url)
    Chance of Rain: ${daysData[9].rainy}%`;
 
     const dayOne = document.getElementById("day1");
-    const dayTwo = document.getElementById("day2");
-    const dayThree = document.getElementById("day3");
-    const dayFour = document.getElementById("day4");
-    const dayFive = document.getElementById("day5");
-    const daySix = document.getElementById("day6");
-    const daySeven = document.getElementById("day7");
-    const dayEight = document.getElementById("day8");
-    const dayNine = document.getElementById("day9");
-    const dayTen = document.getElementById("day10");
-
     dayOne.innerText = day1;
+
+    const dayTwo = document.getElementById("day2");
     dayTwo.innerText = day2;
+
+    const dayThree = document.getElementById("day3");
     dayThree.innerText = day3;
+
+    const dayFour = document.getElementById("day4");
     dayFour.innerText = day4;
+
+    const dayFive = document.getElementById("day5");
     dayFive.innerText = day5;
+
+    const daySix = document.getElementById("day6");
     daySix.innerText = day6;
+
+    const daySeven = document.getElementById("day7");
     daySeven.innerText = day7;
+
+    const dayEight = document.getElementById("day8");
     dayEight.innerText = day8;
+
+    const dayNine = document.getElementById("day9");
     dayNine.innerText = day9;
+
+    const dayTen = document.getElementById("day10");
     dayTen.innerText = day10;
+
+    const dayOnePic = document.getElementById("dayOnePic");
+    dayOnePic.setAttribute("src", daysData[0].pic);
+
+    const dayTwoPic = document.getElementById("dayTwoPic");
+    dayTwoPic.setAttribute("src", daysData[1].pic);
+
+    const dayThreePic = document.getElementById("dayThreePic");
+    dayThreePic.setAttribute("src", daysData[2].pic);
+
+    const dayFourPic = document.getElementById("dayFourPic");
+    dayFourPic.setAttribute("src", daysData[3].pic);
+
+    const dayFivePic = document.getElementById("dayFivePic");
+    dayFivePic.setAttribute("src", daysData[4].pic);
+
+    const daySixPic = document.getElementById("daySixPic");
+    daySixPic.setAttribute("src", daysData[5].pic);
+
+    const daySevenPic = document.getElementById("daySevenPic");
+    daySevenPic.setAttribute("src", daysData[6].pic);
+
+    const dayEightPic = document.getElementById("dayEightPic");
+    dayEightPic.setAttribute("src", daysData[7].pic);
+
+    const dayNinePic = document.getElementById("dayNinePic");
+    dayNinePic.setAttribute("src", daysData[8].pic);
+
+    const dayTenPic = document.getElementById("dayTenPic");
+    dayTenPic.setAttribute("src", daysData[9].pic);
   });
