@@ -52,6 +52,7 @@ body{
     font-family: "Playfair Display";
     font-weight: normal;
     color: rgb(250, 245, 245);
+    position: relative;
 }
 
 .nav-item, .navbar-brand{
@@ -87,6 +88,12 @@ body{
     color: black;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-bottom: 2%;
+}
+
+#linkBack{
+   position: absolute;
+   left: 5%;
+   bottom: 7%; 
 }
 
 footer {
