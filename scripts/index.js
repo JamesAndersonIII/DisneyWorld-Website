@@ -1,3 +1,5 @@
+// TODO:
+
 const city = "Orlando";
 const url = `http://api.weatherapi.com/v1/forecast.json?key=a33dec18f1bd45bda0931106230802&q=${city}&days=10`;
 fetch(url)
