@@ -1,21 +1,29 @@
-const city = "Orlando";
-const url = `https://api.weatherapi.com/v1/forecast.json?key=a33dec18f1bd45bda0931106230802&q=${city}&days=10`;
+// const city = "Orlando";
+
+// fetch data from weather api for orlando
+const url = `https://api.weatherbit.io/v2.0/forecast/daily?city=Orlando,FL&key=302cbae28fbb4c4b944ddce306523afc`;
 fetch(url)
   .then((response) => response.json())
   .then((data) => {
-    const forecast = data.forecast.forecastday;
+    const forecast = data.data;
     const daysData = [];
 
     forecast.forEach((day) => {
+      const iconCode = day.weather.icon;
+      const iconURL = iconMap[iconCode];
+
       daysData.push({
-        pic: day.day.condition.icon,
-        date: day.date,
-        high: day.day.maxtemp_f,
-        low: day.day.mintemp_f,
-        rainy: day.day.daily_chance_of_rain,
+        pic: iconURL,
+        date: day.datetime,
+        high: ((day.max_temp * 9/5) + 32).toFixed(1),
+        low: ((day.min_temp * 9/5) +32).toFixed(1),
+        rainy: day.precip.toFixed(1),
       });
     });
-    // console.log(daysData);
+
+    console.log(daysData[0].rainy);
+    console.log(daysData[4].pic);
+    
 
     const day1 = `Today: 
     Low: ${daysData[0].low}°F 
@@ -127,3 +135,71 @@ fetch(url)
     const dayTenPic = document.getElementById("dayTenPic");
     dayTenPic.setAttribute("src", daysData[9].pic);
   });
+
+  const iconMap = {
+    "t01d" : "https://www.weatherbit.io/static/img/icons/t01d.png",  
+    "t02d" : "https://www.weatherbit.io/static/img/icons/t02d.png",  
+    "t03d" : "https://www.weatherbit.io/static/img/icons/t03d.png", 
+    "t04d" : "https://www.weatherbit.io/static/img/icons/t04d.png",  
+    "t05d" : "https://www.weatherbit.io/static/img/icons/t05d.png",  
+    "d01d" : "https://www.weatherbit.io/static/img/icons/d01d.png", 
+    "d02d" : "https://www.weatherbit.io/static/img/icons/d02d.png", 
+    "d03d" : "https://www.weatherbit.io/static/img/icons/d03d.png",   
+    "r01d" : "https://www.weatherbit.io/static/img/icons/r01d.png",
+    "r02d" : "https://www.weatherbit.io/static/img/icons/r02d.png",
+    "r03d" : "https://www.weatherbit.io/static/img/icons/r03d.png", 
+    "f01d" : "https://www.weatherbit.io/static/img/icons/f01d.png",  
+    "r04d" : "https://www.weatherbit.io/static/img/icons/r04d.png",  
+    "r05d" : "https://www.weatherbit.io/static/img/icons/r05d.png",
+    "r06d" : "https://www.weatherbit.io/static/img/icons/r06d.png", 
+    "s01d" : "https://www.weatherbit.io/static/img/icons/s01d.png", 
+    "s02d" : "https://www.weatherbit.io/static/img/icons/s02d.png", 
+    "s03d" : "https://www.weatherbit.io/static/img/icons/s03d.png",  
+    "s04d" : "https://www.weatherbit.io/static/img/icons/s04d.png",
+    "s05d" : "https://www.weatherbit.io/static/img/icons/s05d.png",
+    "s06d" : "https://www.weatherbit.io/static/img/icons/s06d.png", 
+    "a01d" : "https://www.weatherbit.io/static/img/icons/a01d.png", 
+    "a02d" : "https://www.weatherbit.io/static/img/icons/a02d.png",
+    "a03d" :"https://www.weatherbit.io/static/img/icons/a03d.png",
+    "a04d" : "https://www.weatherbit.io/static/img/icons/a04d.png",
+    "a05d" : "https://www.weatherbit.io/static/img/icons/a05d.png",  
+    "a06d" : "https://www.weatherbit.io/static/img/icons/a06d.png",
+    "c01d" : "https://www.weatherbit.io/static/img/icons/c01d.png",  
+    "c02d" : "https://www.weatherbit.io/static/img/icons/c02d.png", 
+    "c03d" : "https://www.weatherbit.io/static/img/icons/c03d.png",  
+    "c04d" : "https://www.weatherbit.io/static/img/icons/c04d.png",
+    "u00d" : "https://www.weatherbit.io/static/img/icons/u00d.png",
+
+    "t01n" : "https://www.weatherbit.io/static/img/icons/t01n.png",  
+    "t02n" : "https://www.weatherbit.io/static/img/icons/t02n.png",  
+    "t03n" : "https://www.weatherbit.io/static/img/icons/t03n.png", 
+    "t04n" : "https://www.weatherbit.io/static/img/icons/t04n.png",  
+    "t05n" : "https://www.weatherbit.io/static/img/icons/t05n.png",  
+    "d01n" : "https://www.weatherbit.io/static/img/icons/d01n.png", 
+    "d02n" : "https://www.weatherbit.io/static/img/icons/d02n.png", 
+    "d03n" : "https://www.weatherbit.io/static/img/icons/d03n.png",   
+    "r01n" : "https://www.weatherbit.io/static/img/icons/r01n.png",
+    "r02n" : "https://www.weatherbit.io/static/img/icons/r02n.png",
+    "r03n" : "https://www.weatherbit.io/static/img/icons/r03n.png", 
+    "f01n" : "https://www.weatherbit.io/static/img/icons/f01n.png",  
+    "r04n" : "https://www.weatherbit.io/static/img/icons/r04n.png",  
+    "r05n" : "https://www.weatherbit.io/static/img/icons/r05n.png",
+    "r06n" : "https://www.weatherbit.io/static/img/icons/r06n.png", 
+    "s01n" : "https://www.weatherbit.io/static/img/icons/s01n.png", 
+    "s02n" : "https://www.weatherbit.io/static/img/icons/s02n.png", 
+    "s03n" : "https://www.weatherbit.io/static/img/icons/s03n.png",  
+    "s04n" : "https://www.weatherbit.io/static/img/icons/s04n.png",
+    "s05n" : "https://www.weatherbit.io/static/img/icons/s05n.png",
+    "s06n" : "https://www.weatherbit.io/static/img/icons/s06n.png", 
+    "a01n" : "https://www.weatherbit.io/static/img/icons/a01n.png", 
+    "a02n" : "https://www.weatherbit.io/static/img/icons/a02n.png",
+    "a03n" : "https://www.weatherbit.io/static/img/icons/a03n.png",
+    "a04n" : "https://www.weatherbit.io/static/img/icons/a04n.png",
+    "a05n" : "https://www.weatherbit.io/static/img/icons/a05n.png",  
+    "a06n" : "https://www.weatherbit.io/static/img/icons/a06n.png",
+    "c01n" : "https://www.weatherbit.io/static/img/icons/c01n.png",  
+    "c02n" : "https://www.weatherbit.io/static/img/icons/c02n.png", 
+    "c03n" : "https://www.weatherbit.io/static/img/icons/c03n.png",  
+    "c04n" : "https://www.weatherbit.io/static/img/icons/c04n.png",
+    "u00n" : "https://www.weatherbit.io/static/img/icons/u00n.png"
+  }
