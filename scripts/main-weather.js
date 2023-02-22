@@ -20,11 +20,8 @@ fetch(url)
         rainy: day.precip.toFixed(1),
       });
     });
-
-    console.log(daysData[0].rainy);
-    console.log(daysData[4].pic);
     
-
+    // get the temps/ chance of rain
     const day1 = `Today: 
     Low: ${daysData[0].low}°F 
     High: ${daysData[0].high}°F 
@@ -75,6 +72,8 @@ fetch(url)
     High: ${daysData[9].high}°F
    Chance of Rain: ${daysData[9].rainy}%`;
 
+
+  // add temps/chance of rain to the cards
     const dayOne = document.getElementById("day1");
     dayOne.innerText = day1;
 
@@ -105,6 +104,7 @@ fetch(url)
     const dayTen = document.getElementById("day10");
     dayTen.innerText = day10;
 
+    // get icon photos and add to card
     const dayOnePic = document.getElementById("dayOnePic");
     dayOnePic.setAttribute("src", daysData[0].pic);
 
@@ -136,7 +136,9 @@ fetch(url)
     dayTenPic.setAttribute("src", daysData[9].pic);
   });
 
+  // map with urls for each icon code on weather api site
   const iconMap = {
+    // day time icons
     "t01d" : "https://www.weatherbit.io/static/img/icons/t01d.png",  
     "t02d" : "https://www.weatherbit.io/static/img/icons/t02d.png",  
     "t03d" : "https://www.weatherbit.io/static/img/icons/t03d.png", 
@@ -169,7 +171,7 @@ fetch(url)
     "c03d" : "https://www.weatherbit.io/static/img/icons/c03d.png",  
     "c04d" : "https://www.weatherbit.io/static/img/icons/c04d.png",
     "u00d" : "https://www.weatherbit.io/static/img/icons/u00d.png",
-
+// night time icons
     "t01n" : "https://www.weatherbit.io/static/img/icons/t01n.png",  
     "t02n" : "https://www.weatherbit.io/static/img/icons/t02n.png",  
     "t03n" : "https://www.weatherbit.io/static/img/icons/t03n.png", 
