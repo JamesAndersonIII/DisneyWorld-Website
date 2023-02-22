@@ -1,5 +1,5 @@
 const city = "Orlando";
-const url = `https://api.weatherapi.com/v1/forecast.json?key=a33dec18f1bd45bda0931106230802&q=${city}&days=10`;
+const url = `https://api.weatherapi.com/v1/forecast.json?key=a33dec18f1bd45bda0931106230802&q=${city}`;
 fetch(url)
   .then((response) => response.json())
   .then((data) => {
