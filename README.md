@@ -1,5 +1,6 @@
-# Disney World Planner
-Welcome to the Disney World Vacation Planner! This website is designed to help you plan your perfect Disney World vacation. You can choose from one of the four Disney World Parks (Magic Kingdom, Epcot, Hollywood Studios, or Animal Kingdom) and purchase your tickets. You can also select your accommodation from a range of Disney World resorts. You can plan your itinerary by exploring different things to do and restaurants. Finally, you can purchase everything in a convenient and secure shopping cart.<br>
+# [Disney World Planner](https://brandi-jeff.github.io/DisneyWorld-Website/)
+Welcome to the Disney World Vacation Planner! This website is designed to help you plan your perfect Disney World vacation. You can choose from one of the four Disney World Parks (Magic Kingdom, Epcot, Hollywood Studios, or Animal Kingdom) and purchase your tickets. You can also select your accommodation from a range of Disney World resorts. You can plan your itinerary by exploring different things to do and restaurants. Finally, you can purchase everything in a convenient and secure shopping cart.
+<br>
     *** Support: If you encounter any issues while using this website, please contact us at support@disneyworldvacationplanner.com. We will do our best to assist you.
 
 # Features
@@ -96,3 +97,9 @@ Welcome to the Disney World Vacation Planner! This website is designed to help y
 - Create a Project
 - Create issues and assign
 - Pull requests should be approved / reviewed by team member
+
+## Back to the Future
+Below are some improvements that could be done (without infringing on Disney) if I were to come back to this is the future:
+- Add backend so signup/login features work
+- Create local storage so cart can remain when page refreshes
+- Have 'Add to Cart' buttons actually add to cart vs redirecting to cart page
