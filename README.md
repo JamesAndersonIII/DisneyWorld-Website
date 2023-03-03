@@ -97,3 +97,9 @@ Welcome to the Disney World Vacation Planner! This website is designed to help y
 - Create a Project
 - Create issues and assign
 - Pull requests should be approved / reviewed by team member
+
+## Back to the Future
+Below are some improvements that could be done (without infringing on Disney) if I were to come back to this is the future:
+- Add backend so signup/login features work
+- Create local storage so cart can remain when page refreshes
+- Have 'Add to Cart' buttons actuallyy add to cart vs redirecting to cart page
