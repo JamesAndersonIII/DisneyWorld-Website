@@ -1,10 +1,11 @@
 const maxValue = 10;
 const tixPrice = 100;
+const hotelPrice = 200;
+const totalPrice = 0;
 const total = document.getElementById("cartTotal");
 const maxTix = "To purchase more than 10 tickets, please call group sales.";
 
 // Magic Kingdom
-// add to cart button
 magic_btn.addEventListener("click", (e) => {
   e.preventDefault();
   const counter = document.getElementById("magicTix");
@@ -20,33 +21,27 @@ magic_btn.addEventListener("click", (e) => {
   }
 });
 
-// number text box
 magicTix.addEventListener("keydown", (keyPress) => {
-  const counter = document.getElementById("magicTix");
   const pricing = document.getElementById("magicPrice");
+  const counter = document.getElementById("magicTix");
   if (keyPress.key === "Enter") {
     if (parseInt(counter.value) > maxValue) {
       alert(maxTix);
-      counter.value = 0;
-      pricing.innerText = 0;
+      counter.value = 10;
     }
   }
-});
-
-magicTix.addEventListener("change", () => {
-  const pricing = document.getElementById("magicPrice");
-  const counter = document.getElementById("magicTix");
-  if (parseInt(counter.value) !== 0) {
-    pricing.innerText = parseInt(counter.value) * tixPrice;
-  } else {
-    pricing.innerText = 0;
-  }
-  getTotal();
-  resetBtns();
+  magicTix.addEventListener("change", () => {
+    if (parseInt(counter.value) !== 0) {
+      pricing.innerText = parseInt(counter.value) * tixPrice;
+    } else {
+      pricing.innerText = 0;
+    }
+    getTotal();
+    resetBtns();
+  });
 });
 
 // Epcot
-// add to cart button
 epcot_btn.addEventListener("click", (e) => {
   e.preventDefault();
   const counter = document.getElementById("epcotTix");
@@ -61,33 +56,27 @@ epcot_btn.addEventListener("click", (e) => {
   }
 });
 
-// number text box
 epcotTix.addEventListener("keydown", (keyPress) => {
   const counter = document.getElementById("epcotTix");
-  const pricing = document.getElementById("epcotPrice");
   if (keyPress.key === "Enter") {
     if (parseInt(counter.value) > maxValue) {
       alert(maxTix);
-      counter.value = 0;
-      pricing.innerText = 0;
+      counter.value = 10;
     }
   }
-});
-
-epcotTix.addEventListener("change", () => {
-  const pricing = document.getElementById("epcotPrice");
-  const counter = document.getElementById("epcotTix");
-  if (parseInt(counter.value) !== 0) {
-    pricing.innerText = parseInt(counter.value) * tixPrice;
-  } else {
-    pricing.innerText = 0;
-  }
-  getTotal();
-  resetBtns();
+  epcotTix.addEventListener("change", () => {
+    const pricing = document.getElementById("epcotPrice");
+    if (parseInt(counter.value) !== 0) {
+      pricing.innerText = parseInt(counter.value) * tixPrice;
+    } else {
+      pricing.innerText = 0;
+    }
+    getTotal();
+    resetBtns();
+  });
 });
 
 // Hollywood Studios
-// add to cart button
 studio_btn.addEventListener("click", (e) => {
   e.preventDefault();
   const counter = document.getElementById("studioTix");
@@ -102,33 +91,27 @@ studio_btn.addEventListener("click", (e) => {
   }
 });
 
-// number text box
 studioTix.addEventListener("keydown", (keyPress) => {
   const counter = document.getElementById("studioTix");
   const pricing = document.getElementById("studioPrice");
   if (keyPress.key === "Enter") {
     if (parseInt(counter.value) > maxValue) {
       alert(maxTix);
-      counter.value = 0;
-      pricing.innerText = 0;
+      counter.value = 10;
     }
   }
-});
-
-studioTix.addEventListener("change", () => {
-  const counter = document.getElementById("studioTix");
-  const pricing = document.getElementById("studioPrice");
-  if (parseInt(counter.value) !== 0) {
-    pricing.innerText = parseInt(counter.value) * tixPrice;
-  } else {
-    pricing.innerText = 0;
-  }
-  getTotal();
-  resetBtns();
+  studioTix.addEventListener("change", () => {
+    if (parseInt(counter.value) !== 0) {
+      pricing.innerText = parseInt(counter.value) * tixPrice;
+    } else {
+      pricing.innerText = 0;
+    }
+    getTotal();
+    resetBtns();
+  });
 });
 
 // Animal Kingdom
-// add to cart button
 animal_btn.addEventListener("click", (e) => {
   e.preventDefault();
   const counter = document.getElementById("animalTix");
@@ -143,29 +126,24 @@ animal_btn.addEventListener("click", (e) => {
   }
 });
 
-// number text box
 animalTix.addEventListener("keydown", (keyPress) => {
   const counter = document.getElementById("animalTix");
   const pricing = document.getElementById("animalPrice");
   if (keyPress.key === "Enter") {
     if (parseInt(counter.value) > maxValue) {
       alert(maxTix);
-      counter.value = 0;
-      pricing.innerText = 0;
+      counter.value = 10;
     }
   }
-});
-
-animalTix.addEventListener("change", () => {
-  const counter = document.getElementById("animalTix");
-  const pricing = document.getElementById("animalPrice");
-  if (parseInt(counter.value) !== 0) {
-    pricing.innerText = parseInt(counter.value) * tixPrice;
-  } else {
-    pricing.innerText = 0;
-  }
-  getTotal();
-  resetBtns();
+  animalTix.addEventListener("change", () => {
+    if (parseInt(counter.value) !== 0) {
+      pricing.innerText = parseInt(counter.value) * tixPrice;
+    } else {
+      pricing.innerText = 0;
+    }
+    getTotal();
+    resetBtns();
+  });
 });
 
 function getTotal() {
@@ -175,6 +153,7 @@ function getTotal() {
   const animalTotal = document.getElementById("animalPrice");
 
   total.innerText =
+    totalPrice +
     parseInt(magicTotal.innerText) +
     parseInt(epcotTotal.innerText) +
     parseInt(studioTotal.innerText) +

@@ -50,13 +50,12 @@ h1{
 
 
 #totalBtn{
-    background-color: black;
-    color: white;
-    border-radius: 5px;
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-bg: black;
+    --bs-btn-bg: black; 
     width: 120px;
     margin-left: 45%;
     margin-bottom: 2%;
-    cursor: default;
 }
 
 #cartResetBtn{

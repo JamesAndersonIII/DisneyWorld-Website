@@ -2,7 +2,7 @@
 
 html{ 
     box-sizing: border-box;
-   overflow-x: hidden;
+    overflow: hidden;
 }
 
 #header-container, #navbar-container{
@@ -18,7 +18,7 @@ html{
 }
 
 .card{
-    height: 200px;
+    height: 125px;
     background-color: rgb(223, 231, 236, .6);
 }
 
@@ -31,11 +31,7 @@ html{
     width: 20%;
 }
 
-img{
-    max-width: 5rem;
-    max-height: 5rem;
-    align-self: center;
-  }
+
 
 #weather-text{
     background-image: url("https://img.freepik.com/free-vector/blue-cloudy-daylight-background-weather-design_33099-512.jpg");
@@ -52,7 +48,6 @@ body{
     font-family: "Playfair Display";
     font-weight: normal;
     color: rgb(250, 245, 245);
-    position: relative;
 }
 
 .nav-item, .navbar-brand{
@@ -84,28 +79,22 @@ body{
 
 #tenDay{
     padding-left: 10%;
-    margin-top: 3%;
+    margin-top: 6%;
     color: black;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-bottom: 2%;
 }
 
-#linkBack{
-   position: absolute;
-   left: 2%;
-   bottom: 7%; 
-}
-
 footer {
     background-color: rgb(232, 230, 240, .2);
     padding-left: 15px;
-    padding-top: 20px;
+    padding-top: 39px;
     border-top: 1px solid rgb(102, 84, 206);
+    margin-top: 5%;
   }
   
   .container {
     display: flex;
     justify-content: space-between;
-    height: 40px;
+    height: 60px;
   }
-
